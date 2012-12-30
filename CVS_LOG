@@ -1,0 +1,5100 @@
+? CVS_LOG
+
+RCS file: /cvs/gatling/.cvsignore,v
+Working file: .cvsignore
+head: 1.18
+branch:
+locks: strict
+access list:
+symbolic names:
+	init: 1.1.1.1
+	fefe: 1.1.1
+keyword substitution: kv
+total revisions: 19;	selected revisions: 19
+description:
+----------------------------
+revision 1.18
+date: 2010-07-20 22:34:52 +0000;  author: leitner;  state: Exp;  lines: +4 -0
+more ignorance
+----------------------------
+revision 1.17
+date: 2007-10-12 13:31:23 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+split up gatling.c for maintainability
+----------------------------
+revision 1.16
+date: 2007-08-24 21:45:37 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+add havesetresuid.h
+----------------------------
+revision 1.15
+date: 2006-06-04 00:44:18 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+typo
+----------------------------
+revision 1.14
+date: 2006-06-04 00:43:56 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+more ignorance
+----------------------------
+revision 1.13
+date: 2005-10-31 19:32:53 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+more ignorance
+----------------------------
+revision 1.12
+date: 2005-08-24 17:40:01 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+cvsignore libcrypt
+----------------------------
+revision 1.11
+date: 2005-05-20 15:31:47 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+cvsignore cgi
+----------------------------
+revision 1.10
+date: 2005-03-30 14:28:50 +0000;  author: leitner;  state: Exp;  lines: +6 -0
+add getrusage (for memory usage statistics)
+----------------------------
+revision 1.9
+date: 2005-02-22 20:22:32 +0000;  author: leitner;  state: Exp;  lines: +5 -0
+add Makefile target to generate server.pem
+----------------------------
+revision 1.8
+date: 2004-05-08 00:24:19 +0000;  author: leitner;  state: Exp;  lines: +3 -0
+be more ignorant
+----------------------------
+revision 1.7
+date: 2004-02-19 18:12:32 +0000;  author: sanjiyan;  state: Exp;  lines: +1 -7
+Make the FTP-support conditional...
+----------------------------
+revision 1.6
+date: 2003-11-06 21:37:41 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+add forksbench target (statically linked forkbench)
+----------------------------
+revision 1.5
+date: 2003-11-01 16:15:37 +0000;  author: leitner;  state: Exp;  lines: +4 -0
+ignorance is bliss
+----------------------------
+revision 1.4
+date: 2003-10-16 12:42:43 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+add bindbench
+----------------------------
+revision 1.3
+date: 2003-10-10 13:04:44 +0000;  author: leitner;  state: Exp;  lines: +4 -0
+cvsignore the binaries
+add new file number limit handling to gatling and httpbench
+add prep (small readme/script to increase system limits)
+----------------------------
+revision 1.2
+date: 2003-09-24 23:10:10 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+cvsignore version.h
+----------------------------
+revision 1.1
+date: 2003-09-18 17:34:23 +0000;  author: leitner;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 2003-09-18 17:34:23 +0000;  author: leitner;  state: Exp;  lines: +0 -0
+initial import
+=============================================================================
+
+RCS file: /cvs/gatling/.gdbinit,v
+Working file: .gdbinit
+head: 1.13
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 13;	selected revisions: 13
+description:
+----------------------------
+revision 1.13
+date: 2011-08-18 13:29:13 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+several polarssl, scgi and fastcgi fixes
+----------------------------
+revision 1.12
+date: 2010-07-20 14:51:31 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+add svg content sniffing
+----------------------------
+revision 1.11
+date: 2010-01-11 00:09:38 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+add an -I option so you can tell gatling to try index.php, too, in
+addition to index.html
+----------------------------
+revision 1.10
+date: 2010-01-09 02:29:56 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+fastcgi!!
+----------------------------
+revision 1.9
+date: 2010-01-08 17:07:41 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+SCGI support
+----------------------------
+revision 1.8
+date: 2010-01-05 14:37:47 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+fix CGI POST
+add some state machine debugging code
+----------------------------
+revision 1.7
+date: 2008-01-31 20:42:52 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+more attempts at windoze compat
+----------------------------
+revision 1.6
+date: 2008-01-31 17:33:47 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+make gatling compile under glibc again
+fix broken smb handle freeing
+----------------------------
+revision 1.5
+date: 2008-01-14 01:01:06 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+add SMB client support in dl
+support CreateFile in gatling
+----------------------------
+revision 1.4
+date: 2006-07-27 05:24:39 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+some half-assed Windows port (broken)
+use setresuid/setresgid if available
+don't flood console with error messages but count them instead in bench
+----------------------------
+revision 1.3
+date: 2004-05-15 01:39:39 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+add POST support
+----------------------------
+revision 1.2
+date: 2004-02-19 22:27:05 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+add cgi proxy support
+----------------------------
+revision 1.1
+date: 2003-10-09 12:37:34 +0000;  author: leitner;  state: Exp;
+add bindbench
+=============================================================================
+
+RCS file: /cvs/gatling/BIGPICTURE.txt,v
+Working file: BIGPICTURE.txt
+head: 1.1
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 1;	selected revisions: 1
+description:
+----------------------------
+revision 1.1
+date: 2012-01-20 17:03:45 +0000;  author: leitner;  state: Exp;
+some fixes
+=============================================================================
+
+RCS file: /cvs/gatling/CHANGES,v
+Working file: CHANGES
+head: 1.88
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 88;	selected revisions: 88
+description:
+----------------------------
+revision 1.88
+date: 2012-11-02 10:31:49 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+  fix directory traversal in FTP (Jann Horn)
+----------------------------
+revision 1.87
+date: 2012-04-10 23:07:01 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+  make use of new libowfat API to reduce syscalls
+----------------------------
+revision 1.86
+date: 2011-11-21 17:24:11 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+  fix crash bug on I/O errors inside SSL connections
+----------------------------
+revision 1.85
+date: 2011-11-01 18:29:05 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+  remove spurious Content-Range header in 304 HTTP responses
+----------------------------
+revision 1.84
+date: 2011-08-18 13:29:13 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+several polarssl, scgi and fastcgi fixes
+----------------------------
+revision 1.83
+date: 2011-04-08 17:09:29 +0000;  author: leitner;  state: Exp;  lines: +4 -1
+add dir redirect for eRdgEiSt
+----------------------------
+revision 1.82
+date: 2010-09-22 15:28:16 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+bump
+----------------------------
+revision 1.81
+date: 2010-04-11 05:49:08 +0000;  author: leitner;  state: Exp;  lines: +4 -4
+prepare new release
+----------------------------
+revision 1.80
+date: 2010-04-05 04:48:41 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+  win7 does some new strange ioctl call when copying files; return error
+    instead of dropping connection
+----------------------------
+revision 1.79
+date: 2009-11-20 15:20:35 +0000;  author: leitner;  state: Exp;  lines: +4 -0
+  fix http ranges for Range: bytes=0-, would trigger 416 before
+    (Sebastian Köhler)
+----------------------------
+revision 1.78
+date: 2009-10-09 00:12:03 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+  look for theora in .ogg files and say they are video/ogg (requires
+    SUPPORT_MIMEMAGIC)
+----------------------------
+revision 1.77
+date: 2009-08-17 01:55:38 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+make gatling compile without SUPPORT_PROXY defined
+wrap alloca usage in tryalloca from libowfat
+----------------------------
+revision 1.76
+date: 2009-08-11 18:58:03 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+  close ftp-uploaded files in cleanup() (Johannes Ziemke)
+----------------------------
+revision 1.75
+date: 2009-07-05 12:26:33 +0000;  author: sanjiyan;  state: Exp;  lines: +1 -0
+Olaf:
+  Fixing the symlink to directory entry problem.
+  Fixing a minor bug in the MinGW environment using directory listings.
+----------------------------
+revision 1.74
+date: 2009-06-01 16:42:22 +0000;  author: leitner;  state: Exp;  lines: +4 -1
+  setuid in the forkslave, too
+----------------------------
+revision 1.73
+date: 2009-05-28 00:49:01 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+  add proxy support to dl ($http_proxy and $ftp_proxy like libwww)
+----------------------------
+revision 1.72
+date: 2009-03-16 22:48:55 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+  fix a few CGI problems report by Andreas Stuehrk
+----------------------------
+revision 1.71
+date: 2008-11-13 17:49:33 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+  add matchiprange (see comment at top of matchiprange.c)
+----------------------------
+revision 1.70
+date: 2008-09-23 15:22:40 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+  add SSH forwarding to SSL support (see README.tls)
+----------------------------
+revision 1.69
+date: 2008-04-29 05:48:09 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+  sort the other way around in referer
+  dl in http mode now supports cookies and sets the referer
+----------------------------
+revision 1.68
+date: 2008-04-08 05:34:07 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+  add lame anti-DOS support (see README.antidos)
+I also changed the macro generated by genofsmacro.pl to use sizeof to
+prevent gcc warnings about out-of-bounds array accesses (that were never
+actually triggered because those accesses were optimized out by the
+compiler, but it still warned about them)
+----------------------------
+revision 1.67
+date: 2008-02-26 00:53:21 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+fix dl -O- for smb
+change old SMB code to not keep state in static char arrays so we can
+  later switch to multiple threads
+----------------------------
+revision 1.66
+date: 2007-11-02 00:55:54 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+  abstract out accept() deferment to libowfat (socket_deferaccept)
+----------------------------
+revision 1.65
+date: 2007-10-09 00:49:07 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+better hash function in acc
+add multi-ranges (only used by the Acrobat Reader plugin AFAIK)
+----------------------------
+revision 1.64
+date: 2007-08-24 21:49:43 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+version bump
+----------------------------
+revision 1.63
+date: 2007-08-04 23:09:08 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+  make dl print some statistics if stderr is a TTY
+----------------------------
+revision 1.62
+date: 2007-07-12 23:24:36 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+fix POST
+----------------------------
+revision 1.61
+date: 2007-05-02 06:14:40 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+  dl: when printing an ftp directory listing, filter \r
+  dl: in -i mode, don't complain if utime fails
+----------------------------
+revision 1.60
+date: 2007-04-10 04:23:08 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+  fix memory leak in proxy_connection() (Johannes Vetter)
+----------------------------
+revision 1.59
+date: 2007-02-24 22:28:11 +0000;  author: leitner;  state: Exp;  lines: +0 -3
+whups, wrong changelog
+----------------------------
+revision 1.58
+date: 2007-01-31 21:00:41 +0000;  author: leitner;  state: Exp;  lines: +3 -0
+  use time_t in struct stat for the time values
+  support LLMNR in dnsd (no idea if it works, apparently only Vista
+    supports it)
+----------------------------
+revision 1.57
+date: 2007-01-10 14:11:05 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+support /etc/mime.types style mime-type files
+----------------------------
+revision 1.56
+date: 2006-12-01 21:52:29 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+use radix sort instead of qsort in readfrag
+----------------------------
+revision 1.55
+date: 2006-10-16 12:56:19 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+  for HEAD, suppress body of error messages (Andreas Krennmair)
+----------------------------
+revision 1.54
+date: 2006-07-27 05:24:39 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+some half-assed Windows port (broken)
+use setresuid/setresgid if available
+don't flood console with error messages but count them instead in bench
+----------------------------
+revision 1.53
+date: 2006-06-04 00:43:08 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+  add referrer (extract nice external referrer statistics from acc
+    output, before or after tai64nlocal)
+----------------------------
+revision 1.52
+date: 2006-06-02 01:56:16 +0000;  author: leitner;  state: Exp;  lines: +3 -0
+add hcat
+----------------------------
+revision 1.51
+date: 2006-02-08 02:06:16 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+  tell download accelerators that we support ranges
+----------------------------
+revision 1.50
+date: 2005-12-19 13:42:43 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+fix .gz
+----------------------------
+revision 1.49
+date: 2005-11-24 15:28:02 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+make dl follow http redirects
+----------------------------
+revision 1.48
+date: 2005-10-31 17:55:57 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+  allow .htaccess_global
+----------------------------
+revision 1.47
+date: 2005-10-22 00:53:03 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+  also log the GET arguments in the log for CGI requests
+----------------------------
+revision 1.46
+date: 2005-10-07 19:45:46 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+document mime magic
+----------------------------
+revision 1.45
+date: 2005-09-23 10:58:07 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+add Date header
+----------------------------
+revision 1.44
+date: 2005-09-02 20:52:06 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+make bzip2 optional
+----------------------------
+revision 1.43
+date: 2005-08-27 15:16:43 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+document adding bench
+----------------------------
+revision 1.42
+date: 2005-07-01 11:32:21 +0000;  author: leitner;  state: Exp;  lines: +9 -0
+add support for -C+x (consider all executable files with ELF or shebang
+CGI)
+----------------------------
+revision 1.41
+date: 2005-06-26 18:07:56 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+/server-status
+----------------------------
+revision 1.40
+date: 2005-05-24 08:51:02 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+version bump
+----------------------------
+revision 1.39
+date: 2005-05-20 14:44:57 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+  IRIX compatibility (yuck!)
+----------------------------
+revision 1.38
+date: 2005-05-18 12:30:37 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+  only fork cgi slave if -C is given on command line
+----------------------------
+revision 1.37
+date: 2005-05-17 12:51:36 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+add temporary redirect option
+----------------------------
+revision 1.36
+date: 2005-04-23 15:51:48 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+  gcc 4 unsigned char* <-> char* cleanups
+----------------------------
+revision 1.35
+date: 2005-04-14 13:03:03 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+More conformant CGI environment passing
+----------------------------
+revision 1.34
+date: 2005-04-04 10:52:10 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+fix pipelining bug
+----------------------------
+revision 1.33
+date: 2005-03-11 22:38:46 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+version bump
+----------------------------
+revision 1.32
+date: 2005-02-21 13:16:21 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+properly serve libstdc++.tar.gz (need libowfat cvs)
+----------------------------
+revision 1.31
+date: 2005-01-31 18:34:15 +0000;  author: leitner;  state: Exp;  lines: +0 -1
+don't actually say version bump ;)
+----------------------------
+revision 1.30
+date: 2005-01-31 18:30:28 +0000;  author: leitner;  state: Exp;  lines: +3 -0
+version bump
+----------------------------
+revision 1.29
+date: 2005-01-31 16:15:07 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+fix http ranges
+----------------------------
+revision 1.28
+date: 2004-12-17 20:47:50 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+now with crude .htaccess support
+----------------------------
+revision 1.27
+date: 2004-12-03 23:05:32 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+better SSL support
+----------------------------
+revision 1.26
+date: 2004-11-26 20:01:46 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+add TLS support (using OpenSSL; not quite working yet)
+----------------------------
+revision 1.25
+date: 2004-10-08 21:44:09 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+  implement ABOR (ncftp was confused after aborting a connection)
+----------------------------
+revision 1.24
+date: 2004-07-29 11:12:44 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+bump version
+----------------------------
+revision 1.23
+date: 2004-07-28 13:24:13 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+add -l option to work around broken ftp proxy servers
+----------------------------
+revision 1.22
+date: 2004-07-23 13:59:44 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+add experimental CGI support
+----------------------------
+revision 1.21
+date: 2004-07-01 16:27:38 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+document changes
+----------------------------
+revision 1.20
+date: 2004-05-15 01:39:39 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+add POST support
+----------------------------
+revision 1.19
+date: 2004-05-10 20:40:56 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+add resume support to dl
+----------------------------
+revision 1.18
+date: 2004-05-04 20:27:57 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+output size in log as 64-bit number
+----------------------------
+revision 1.17
+date: 2004-04-25 18:48:07 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+add broken symlink style redirects
+----------------------------
+revision 1.16
+date: 2004-02-25 02:15:34 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+fix HTTP pipelining fd leak
+----------------------------
+revision 1.15
+date: 2004-02-24 01:27:09 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+add man page
+----------------------------
+revision 1.14
+date: 2004-02-24 01:01:06 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+update -h
+----------------------------
+revision 1.13
+date: 2004-02-19 22:27:05 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+add cgi proxy support
+----------------------------
+revision 1.12
+date: 2004-02-19 18:12:37 +0000;  author: leitner;  state: Exp;  lines: +3 -0
+bump to 0.5
+----------------------------
+revision 1.11
+date: 2003-11-26 22:17:29 +0000;  author: leitner;  state: Exp;  lines: +2 -1
+add two READMEs
+support pipelining
+support CDUP for FTP
+----------------------------
+revision 1.10
+date: 2003-11-24 04:20:38 +0000;  author: leitner;  state: Exp;  lines: +3 -0
+provide primitive FTP support
+----------------------------
+revision 1.9
+date: 2003-11-01 15:07:49 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+fix ranges and fd leak (Thomas Walpuski)
+----------------------------
+revision 1.8
+date: 2003-10-23 10:40:31 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+credit Niels
+----------------------------
+revision 1.7
+date: 2003-10-21 18:13:27 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+  compiler warnings removed (Julien Touche)
+----------------------------
+revision 1.6
+date: 2003-10-17 20:55:21 +0000;  author: leitner;  state: Exp;  lines: +3 -0
+add chroot+setuid support
+----------------------------
+revision 1.5
+date: 2003-10-07 20:08:07 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+add httpbench, make logging optional for gatling, and add small READMEs
+----------------------------
+revision 1.4
+date: 2003-10-07 00:10:00 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+more documentation
+----------------------------
+revision 1.3
+date: 2003-10-02 23:32:46 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+timeout handling
+----------------------------
+revision 1.2
+date: 2003-09-26 18:23:35 +0000;  author: leitner;  state: Exp;  lines: +3 -0
+add zlib support (only for directory listings, though)
+add clever hack to auto-detect diet
+----------------------------
+revision 1.1
+date: 2003-09-19 15:39:51 +0000;  author: leitner;  state: Exp;
+add if-modified-since, HEAD and HTTP ranges
+=============================================================================
+
+RCS file: /cvs/gatling/GNUmakefile,v
+Working file: GNUmakefile
+head: 1.77
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 77;	selected revisions: 77
+description:
+----------------------------
+revision 1.77
+date: 2012-04-19 16:42:36 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+make clean ptlsgatling
+----------------------------
+revision 1.76
+date: 2012-04-19 16:37:56 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+remove _nofail from target binary names
+----------------------------
+revision 1.75
+date: 2012-04-10 23:07:01 +0000;  author: leitner;  state: Exp;  lines: +8 -3
+  make use of new libowfat API to reduce syscalls
+----------------------------
+revision 1.74
+date: 2011-10-28 15:51:47 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+make sure all files depending on the layout of struct http_data are
+compiled again for tlsgatling and ptlsgatling
+----------------------------
+revision 1.73
+date: 2011-08-19 00:50:49 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+polarssl compile fix
+----------------------------
+revision 1.72
+date: 2011-08-18 13:29:13 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+several polarssl, scgi and fastcgi fixes
+----------------------------
+revision 1.71
+date: 2011-05-12 21:11:00 +0000;  author: leitner;  state: Exp;  lines: +10 -2
+add initial polarssl support (run "make ptlsgatling" to try it out)
+----------------------------
+revision 1.70
+date: 2010-04-11 05:49:08 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+prepare new release
+----------------------------
+revision 1.69
+date: 2010-01-04 21:04:35 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+more freebsd
+----------------------------
+revision 1.68
+date: 2010-01-04 21:01:03 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+jetzt aba
+----------------------------
+revision 1.67
+date: 2010-01-04 20:58:59 +0000;  author: leitner;  state: Exp;  lines: +5 -7
+bsd
+----------------------------
+revision 1.66
+date: 2010-01-04 20:55:55 +0000;  author: leitner;  state: Exp;  lines: +9 -5
+add /usr/local/include if needed for iconv.h
+----------------------------
+revision 1.65
+date: 2009-08-17 01:55:38 +0000;  author: leitner;  state: Exp;  lines: +11 -1
+make gatling compile without SUPPORT_PROXY defined
+wrap alloca usage in tryalloca from libowfat
+----------------------------
+revision 1.64
+date: 2008-12-05 12:31:01 +0000;  author: leitner;  state: Exp;  lines: +5 -4
+fix -lcrypto md5 test
+----------------------------
+revision 1.63
+date: 2008-12-05 12:13:13 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+add -lowfat for acc
+----------------------------
+revision 1.62
+date: 2008-11-26 17:10:03 +0000;  author: leitner;  state: Exp;  lines: +4 -4
+count ssh forwarded SSL connections as terminated
+----------------------------
+revision 1.61
+date: 2008-11-13 17:49:33 +0000;  author: leitner;  state: Exp;  lines: +3 -1
+  add matchiprange (see comment at top of matchiprange.c)
+----------------------------
+revision 1.60
+date: 2008-09-23 15:22:40 +0000;  author: leitner;  state: Exp;  lines: +6 -2
+  add SSH forwarding to SSL support (see README.tls)
+----------------------------
+revision 1.59
+date: 2008-05-12 04:32:52 +0000;  author: leitner;  state: Exp;  lines: +4 -1
+add hitprofile (referrer including [no_referrer])
+----------------------------
+revision 1.58
+date: 2008-04-12 18:22:54 +0000;  author: leitner;  state: Exp;  lines: +2 -1
+try -lmd for md5 von FreeBSD
+----------------------------
+revision 1.57
+date: 2008-04-08 05:34:07 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+  add lame anti-DOS support (see README.antidos)
+I also changed the macro generated by genofsmacro.pl to use sizeof to
+prevent gcc warnings about out-of-bounds array accesses (that were never
+actually triggered because those accesses were optimized out by the
+compiler, but it still warned about them)
+----------------------------
+revision 1.56
+date: 2008-02-19 16:12:58 +0000;  author: leitner;  state: Exp;  lines: +10 -4
+pull in openssl -lcrypto for md5 on non-dietlibc platforms
+----------------------------
+revision 1.55
+date: 2008-01-31 17:33:47 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+make gatling compile under glibc again
+fix broken smb handle freeing
+----------------------------
+revision 1.54
+date: 2007-10-17 16:21:59 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+work on SMB support
+----------------------------
+revision 1.53
+date: 2007-10-12 13:31:23 +0000;  author: leitner;  state: Exp;  lines: +9 -5
+split up gatling.c for maintainability
+----------------------------
+revision 1.52
+date: 2007-01-31 17:05:38 +0000;  author: leitner;  state: Exp;  lines: +10 -10
+fix setresuid check (didn't work on OS X)
+----------------------------
+revision 1.51
+date: 2007-01-10 14:11:05 +0000;  author: leitner;  state: Exp;  lines: +5 -2
+support /etc/mime.types style mime-type files
+----------------------------
+revision 1.50
+date: 2006-07-27 05:24:39 +0000;  author: leitner;  state: Exp;  lines: +10 -4
+some half-assed Windows port (broken)
+use setresuid/setresgid if available
+don't flood console with error messages but count them instead in bench
+----------------------------
+revision 1.49
+date: 2006-06-02 01:56:16 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+add hcat
+----------------------------
+revision 1.48
+date: 2006-06-01 05:37:13 +0000;  author: leitner;  state: Exp;  lines: +4 -1
+C version of acc.pl (much faster)
+----------------------------
+revision 1.47
+date: 2005-10-07 15:39:15 +0000;  author: leitner;  state: Exp;  lines: +2 -1
+add rellink
+----------------------------
+revision 1.46
+date: 2005-10-06 22:15:58 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+also install getlinks
+----------------------------
+revision 1.45
+date: 2005-10-06 22:14:22 +0000;  author: leitner;  state: Exp;  lines: +2 -1
+add simple links completion tool
+----------------------------
+revision 1.44
+date: 2005-10-06 16:44:32 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+make dl more versatile
+----------------------------
+revision 1.43
+date: 2005-09-23 10:58:07 +0000;  author: leitner;  state: Exp;  lines: +6 -1
+add Date header
+----------------------------
+revision 1.42
+date: 2005-08-05 15:31:29 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+also install dl
+----------------------------
+revision 1.41
+date: 2005-08-05 15:23:01 +0000;  author: leitner;  state: Exp;  lines: +7 -3
+build fix
+----------------------------
+revision 1.40
+date: 2005-08-05 15:18:28 +0000;  author: leitner;  state: Exp;  lines: +3 -1
+build fix
+----------------------------
+revision 1.39
+date: 2005-08-05 15:15:08 +0000;  author: leitner;  state: Exp;  lines: +4 -1
+build fix
+----------------------------
+revision 1.38
+date: 2005-07-25 19:27:38 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+fix dependencies
+----------------------------
+revision 1.37
+date: 2005-07-25 19:15:44 +0000;  author: leitner;  state: Exp;  lines: +8 -4
+try to detect if we need -lcrypt
+----------------------------
+revision 1.36
+date: 2005-07-25 18:59:00 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+move bench before tlsgatling
+bench now outputs the request rate
+----------------------------
+revision 1.35
+date: 2005-07-25 11:37:32 +0000;  author: leitner;  state: Exp;  lines: +2 -1
+add simple HTTP benchmark tool
+----------------------------
+revision 1.34
+date: 2005-05-19 05:30:48 +0000;  author: leitner;  state: Exp;  lines: +5 -5
+try to work around Fedora gcc
+----------------------------
+revision 1.33
+date: 2005-05-17 12:51:36 +0000;  author: leitner;  state: Exp;  lines: +4 -0
+add temporary redirect option
+----------------------------
+revision 1.32
+date: 2005-05-04 13:48:39 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+add -lcrypt
+----------------------------
+revision 1.31
+date: 2005-04-14 13:03:03 +0000;  author: leitner;  state: Exp;  lines: +3 -1
+More conformant CGI environment passing
+----------------------------
+revision 1.30
+date: 2005-03-11 18:21:10 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+forgot CFLAGS for tlsgatling target
+----------------------------
+revision 1.29
+date: 2005-02-23 09:27:25 +0000;  author: leitner;  state: Exp;  lines: +2 -1
+also install tlsgatling if it has been built
+----------------------------
+revision 1.28
+date: 2005-02-22 20:22:32 +0000;  author: leitner;  state: Exp;  lines: +18 -1
+add Makefile target to generate server.pem
+----------------------------
+revision 1.27
+date: 2005-01-31 18:20:15 +0000;  author: leitner;  state: Exp;  lines: +11 -0
+add make rename and make tar
+----------------------------
+revision 1.26
+date: 2004-11-26 20:01:46 +0000;  author: leitner;  state: Exp;  lines: +4 -1
+add TLS support (using OpenSSL; not quite working yet)
+----------------------------
+revision 1.25
+date: 2004-05-08 00:26:51 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+argh!!!
+----------------------------
+revision 1.24
+date: 2004-05-08 00:26:21 +0000;  author: leitner;  state: Exp;  lines: +4 -3
+also install man page
+----------------------------
+revision 1.23
+date: 2004-05-08 00:23:47 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+It's install -d, not install -D
+----------------------------
+revision 1.22
+date: 2004-02-25 02:28:13 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+turn off debugging
+----------------------------
+revision 1.21
+date: 2004-02-24 00:19:31 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+add optional more file descriptor leak debugging
+----------------------------
+revision 1.20
+date: 2004-02-23 23:53:40 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+add fd debugging so I can debug descriptor leaks
+----------------------------
+revision 1.19
+date: 2004-02-19 22:27:05 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+add cgi proxy support
+----------------------------
+revision 1.18
+date: 2004-02-19 18:12:32 +0000;  author: sanjiyan;  state: Exp;  lines: +1 -1
+Make the FTP-support conditional...
+----------------------------
+revision 1.17
+date: 2004-01-08 15:21:57 +0000;  author: leitner;  state: Exp;  lines: +10 -4
+iconv workaround
+----------------------------
+revision 1.16
+date: 2004-01-07 19:43:43 +0000;  author: leitner;  state: Exp;  lines: +7 -4
+mention fragmentation in README.prefetch, add readfrag
+----------------------------
+revision 1.15
+date: 2003-11-07 16:05:24 +0000;  author: leitner;  state: Exp;  lines: +2 -1
+more cleanup
+document -n in gatling's -h output
+----------------------------
+revision 1.14
+date: 2003-11-06 21:37:41 +0000;  author: leitner;  state: Exp;  lines: +4 -1
+add forksbench target (statically linked forkbench)
+----------------------------
+revision 1.13
+date: 2003-11-06 21:30:28 +0000;  author: leitner;  state: Exp;  lines: +15 -1
+Solaris portability fixes
+bindbench now checks whether the socket() and bind() actually worked (duh)
+----------------------------
+revision 1.12
+date: 2003-11-01 00:07:29 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+fix memory leaks in gatling
+add ioerr (to provoke errors in httpd)
+----------------------------
+revision 1.11
+date: 2003-10-23 20:58:31 +0000;  author: leitner;  state: Exp;  lines: +3 -2
+add another mmap test that opens many small files
+----------------------------
+revision 1.10
+date: 2003-10-21 18:13:27 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+  compiler warnings removed (Julien Touche)
+----------------------------
+revision 1.9
+date: 2003-10-11 15:00:30 +0000;  author: leitner;  state: Exp;  lines: +5 -2
+add pthreadbench
+----------------------------
+revision 1.8
+date: 2003-10-09 21:26:29 +0000;  author: leitner;  state: Exp;  lines: +8 -17
+add forkbench
+----------------------------
+revision 1.7
+date: 2003-10-09 17:29:39 +0000;  author: leitner;  state: Exp;  lines: +5 -2
+add mmapbench
+----------------------------
+revision 1.6
+date: 2003-10-09 13:02:43 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+dang, forgot one
+----------------------------
+revision 1.5
+date: 2003-10-09 13:01:15 +0000;  author: leitner;  state: Exp;  lines: +3 -0
+add bindbench to build sequence
+----------------------------
+revision 1.4
+date: 2003-10-09 01:17:36 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+update make clean
+----------------------------
+revision 1.3
+date: 2003-10-09 01:16:59 +0000;  author: leitner;  state: Exp;  lines: +4 -1
+add small download program for testing
+----------------------------
+revision 1.2
+date: 2003-10-07 20:08:07 +0000;  author: leitner;  state: Exp;  lines: +4 -1
+add httpbench, make logging optional for gatling, and add small READMEs
+----------------------------
+revision 1.1
+date: 2003-10-07 16:02:03 +0000;  author: leitner;  state: Exp;
+add fall-back Makefile for BSD
+=============================================================================
+
+RCS file: /cvs/gatling/LICENSE,v
+Working file: LICENSE
+head: 1.1
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 1;	selected revisions: 1
+description:
+----------------------------
+revision 1.1
+date: 2005-02-18 23:11:33 +0000;  author: leitner;  state: Exp;
+gatling is GPL code.  Communicate it.
+=============================================================================
+
+RCS file: /cvs/gatling/Makefile,v
+Working file: Makefile
+head: 1.71
+branch:
+locks: strict
+access list:
+symbolic names:
+	init: 1.1.1.1
+	fefe: 1.1.1
+keyword substitution: kv
+total revisions: 72;	selected revisions: 72
+description:
+----------------------------
+revision 1.71
+date: 2011-10-28 15:51:47 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+make sure all files depending on the layout of struct http_data are
+compiled again for tlsgatling and ptlsgatling
+----------------------------
+revision 1.70
+date: 2011-08-19 00:50:49 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+polarssl compile fix
+----------------------------
+revision 1.69
+date: 2010-01-19 03:03:57 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+bsd
+----------------------------
+revision 1.68
+date: 2010-01-19 03:02:29 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+bsd
+----------------------------
+revision 1.67
+date: 2010-01-04 21:01:03 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+jetzt aba
+----------------------------
+revision 1.66
+date: 2010-01-04 20:58:59 +0000;  author: leitner;  state: Exp;  lines: +4 -6
+bsd
+----------------------------
+revision 1.65
+date: 2010-01-04 20:55:55 +0000;  author: leitner;  state: Exp;  lines: +9 -5
+add /usr/local/include if needed for iconv.h
+----------------------------
+revision 1.64
+date: 2009-08-17 01:55:38 +0000;  author: leitner;  state: Exp;  lines: +12 -0
+make gatling compile without SUPPORT_PROXY defined
+wrap alloca usage in tryalloca from libowfat
+----------------------------
+revision 1.63
+date: 2009-04-09 17:12:23 +0000;  author: leitner;  state: Exp;  lines: +3 -1
+fix hitprofile build
+----------------------------
+revision 1.62
+date: 2008-12-05 12:31:01 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+fix -lcrypto md5 test
+----------------------------
+revision 1.61
+date: 2008-11-13 17:49:33 +0000;  author: leitner;  state: Exp;  lines: +4 -1
+  add matchiprange (see comment at top of matchiprange.c)
+----------------------------
+revision 1.60
+date: 2008-09-23 15:22:40 +0000;  author: leitner;  state: Exp;  lines: +6 -2
+  add SSH forwarding to SSL support (see README.tls)
+----------------------------
+revision 1.59
+date: 2008-05-12 04:32:52 +0000;  author: leitner;  state: Exp;  lines: +4 -1
+add hitprofile (referrer including [no_referrer])
+----------------------------
+revision 1.58
+date: 2008-04-12 18:22:54 +0000;  author: leitner;  state: Exp;  lines: +2 -1
+try -lmd for md5 von FreeBSD
+----------------------------
+revision 1.57
+date: 2008-04-12 17:51:00 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+gatling now also uses connstat.o
+----------------------------
+revision 1.56
+date: 2008-02-19 16:12:58 +0000;  author: leitner;  state: Exp;  lines: +9 -3
+pull in openssl -lcrypto for md5 on non-dietlibc platforms
+----------------------------
+revision 1.55
+date: 2007-10-17 16:21:59 +0000;  author: leitner;  state: Exp;  lines: +7 -5
+work on SMB support
+----------------------------
+revision 1.54
+date: 2007-01-31 17:05:38 +0000;  author: leitner;  state: Exp;  lines: +9 -9
+fix setresuid check (didn't work on OS X)
+----------------------------
+revision 1.53
+date: 2006-07-27 05:24:39 +0000;  author: leitner;  state: Exp;  lines: +6 -2
+some half-assed Windows port (broken)
+use setresuid/setresgid if available
+don't flood console with error messages but count them instead in bench
+----------------------------
+revision 1.52
+date: 2006-06-02 01:56:16 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+add hcat
+----------------------------
+revision 1.51
+date: 2006-06-01 05:37:13 +0000;  author: leitner;  state: Exp;  lines: +5 -1
+C version of acc.pl (much faster)
+----------------------------
+revision 1.50
+date: 2005-10-06 22:15:58 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+also install getlinks
+----------------------------
+revision 1.49
+date: 2005-10-06 22:14:22 +0000;  author: leitner;  state: Exp;  lines: +4 -1
+add simple links completion tool
+----------------------------
+revision 1.48
+date: 2005-10-06 16:44:32 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+make dl more versatile
+----------------------------
+revision 1.47
+date: 2005-08-22 12:52:05 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+bsd compat
+----------------------------
+revision 1.46
+date: 2005-08-22 12:51:22 +0000;  author: leitner;  state: Exp;  lines: +3 -3
+bsd compat
+----------------------------
+revision 1.45
+date: 2005-08-05 15:15:08 +0000;  author: leitner;  state: Exp;  lines: +4 -1
+build fix
+----------------------------
+revision 1.44
+date: 2005-07-25 19:27:38 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+fix dependencies
+----------------------------
+revision 1.43
+date: 2005-07-25 19:15:44 +0000;  author: leitner;  state: Exp;  lines: +11 -4
+try to detect if we need -lcrypt
+----------------------------
+revision 1.42
+date: 2005-07-25 18:59:00 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+move bench before tlsgatling
+bench now outputs the request rate
+----------------------------
+revision 1.41
+date: 2005-07-25 11:37:32 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+add simple HTTP benchmark tool
+----------------------------
+revision 1.40
+date: 2005-05-04 13:48:39 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+add -lcrypt
+----------------------------
+revision 1.39
+date: 2005-04-14 13:03:03 +0000;  author: leitner;  state: Exp;  lines: +4 -1
+More conformant CGI environment passing
+----------------------------
+revision 1.38
+date: 2005-02-23 09:27:25 +0000;  author: leitner;  state: Exp;  lines: +2 -1
+also install tlsgatling if it has been built
+----------------------------
+revision 1.37
+date: 2005-02-22 20:22:32 +0000;  author: leitner;  state: Exp;  lines: +19 -1
+add Makefile target to generate server.pem
+----------------------------
+revision 1.36
+date: 2004-11-26 20:01:46 +0000;  author: leitner;  state: Exp;  lines: +4 -1
+add TLS support (using OpenSSL; not quite working yet)
+----------------------------
+revision 1.35
+date: 2004-05-08 00:26:21 +0000;  author: leitner;  state: Exp;  lines: +6 -3
+also install man page
+----------------------------
+revision 1.34
+date: 2004-05-08 00:23:47 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+It's install -d, not install -D
+----------------------------
+revision 1.33
+date: 2004-02-19 22:27:05 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+add cgi proxy support
+----------------------------
+revision 1.32
+date: 2004-02-19 16:22:17 +0000;  author: leitner;  state: Exp;  lines: +3 -3
+remove dummy.c
+----------------------------
+revision 1.31
+date: 2004-01-08 15:23:03 +0000;  author: leitner;  state: Exp;  lines: +9 -3
+more hp-ux madness
+----------------------------
+revision 1.30
+date: 2003-12-05 16:45:58 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+head -1 -> head -n 1
+----------------------------
+revision 1.29
+date: 2003-11-07 16:05:24 +0000;  author: leitner;  state: Exp;  lines: +2 -1
+more cleanup
+document -n in gatling's -h output
+----------------------------
+revision 1.28
+date: 2003-11-06 21:37:41 +0000;  author: leitner;  state: Exp;  lines: +4 -1
+add forksbench target (statically linked forkbench)
+----------------------------
+revision 1.27
+date: 2003-11-06 21:30:28 +0000;  author: leitner;  state: Exp;  lines: +17 -11
+Solaris portability fixes
+bindbench now checks whether the socket() and bind() actually worked (duh)
+----------------------------
+revision 1.26
+date: 2003-11-01 00:07:29 +0000;  author: leitner;  state: Exp;  lines: +4 -1
+fix memory leaks in gatling
+add ioerr (to provoke errors in httpd)
+----------------------------
+revision 1.25
+date: 2003-10-23 20:58:31 +0000;  author: leitner;  state: Exp;  lines: +11 -2
+add another mmap test that opens many small files
+----------------------------
+revision 1.24
+date: 2003-10-21 18:13:27 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+  compiler warnings removed (Julien Touche)
+----------------------------
+revision 1.23
+date: 2003-10-11 15:00:30 +0000;  author: leitner;  state: Exp;  lines: +4 -1
+add pthreadbench
+----------------------------
+revision 1.22
+date: 2003-10-10 15:21:50 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+NetBSD does not have sigwait either!!
+Damn, what now?  I'll sleep for 5 minutes instead.  Duh.
+----------------------------
+revision 1.21
+date: 2003-10-10 15:19:16 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+add -lpthread for the BSDs
+----------------------------
+revision 1.20
+date: 2003-10-10 00:12:03 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+oops, linked in wrong object on BSD
+----------------------------
+revision 1.19
+date: 2003-10-10 00:00:49 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+change link order
+----------------------------
+revision 1.18
+date: 2003-10-09 21:26:29 +0000;  author: leitner;  state: Exp;  lines: +5 -2
+add forkbench
+----------------------------
+revision 1.17
+date: 2003-10-09 17:29:39 +0000;  author: leitner;  state: Exp;  lines: +5 -2
+add mmapbench
+----------------------------
+revision 1.16
+date: 2003-10-09 13:01:15 +0000;  author: leitner;  state: Exp;  lines: +8 -5
+add bindbench to build sequence
+----------------------------
+revision 1.15
+date: 2003-10-09 01:17:36 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+update make clean
+----------------------------
+revision 1.14
+date: 2003-10-09 01:16:59 +0000;  author: leitner;  state: Exp;  lines: +4 -1
+add small download program for testing
+----------------------------
+revision 1.13
+date: 2003-10-07 20:10:36 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+use str_len instead of strlen
+----------------------------
+revision 1.12
+date: 2003-10-07 20:08:07 +0000;  author: leitner;  state: Exp;  lines: +4 -1
+add httpbench, make logging optional for gatling, and add small READMEs
+----------------------------
+revision 1.11
+date: 2003-10-07 16:08:04 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+make Makefile even more BSD friendly
+----------------------------
+revision 1.10
+date: 2003-10-07 16:03:24 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+still doesn't work
+----------------------------
+revision 1.9
+date: 2003-10-07 16:02:03 +0000;  author: leitner;  state: Exp;  lines: +5 -45
+add fall-back Makefile for BSD
+----------------------------
+revision 1.8
+date: 2003-09-26 19:30:01 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+bug fix
+----------------------------
+revision 1.7
+date: 2003-09-26 19:28:38 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+bugfix
+----------------------------
+revision 1.6
+date: 2003-09-26 18:37:14 +0000;  author: leitner;  state: Exp;  lines: +8 -1
+auto detect local libowfat source trees and use them
+----------------------------
+revision 1.5
+date: 2003-09-26 18:23:35 +0000;  author: leitner;  state: Exp;  lines: +22 -4
+add zlib support (only for directory listings, though)
+add clever hack to auto-detect diet
+----------------------------
+revision 1.4
+date: 2003-09-24 22:46:50 +0000;  author: leitner;  state: Exp;  lines: +15 -3
+add DEBUG=1 mode
+----------------------------
+revision 1.3
+date: 2003-09-19 15:39:51 +0000;  author: leitner;  state: Exp;  lines: +6 -1
+add if-modified-since, HEAD and HTTP ranges
+----------------------------
+revision 1.2
+date: 2003-09-18 17:36:00 +0000;  author: leitner;  state: Exp;  lines: +4 -3
+make -h actually work
+----------------------------
+revision 1.1
+date: 2003-09-18 17:34:23 +0000;  author: leitner;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 2003-09-18 17:34:23 +0000;  author: leitner;  state: Exp;  lines: +0 -0
+initial import
+=============================================================================
+
+RCS file: /cvs/gatling/README,v
+Working file: README
+head: 1.1
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 1;	selected revisions: 1
+description:
+----------------------------
+revision 1.1
+date: 2003-10-07 20:08:07 +0000;  author: leitner;  state: Exp;
+add httpbench, make logging optional for gatling, and add small READMEs
+=============================================================================
+
+RCS file: /cvs/gatling/README.antidos,v
+Working file: README.antidos
+head: 1.1
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 1;	selected revisions: 1
+description:
+----------------------------
+revision 1.1
+date: 2008-04-08 05:34:07 +0000;  author: leitner;  state: Exp;
+  add lame anti-DOS support (see README.antidos)
+I also changed the macro generated by genofsmacro.pl to use sizeof to
+prevent gcc warnings about out-of-bounds array accesses (that were never
+actually triggered because those accesses were optimized out by the
+compiler, but it still warned about them)
+=============================================================================
+
+RCS file: /cvs/gatling/README.bindbench,v
+Working file: README.bindbench
+head: 1.1
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 1;	selected revisions: 1
+description:
+----------------------------
+revision 1.1
+date: 2003-10-09 22:35:10 +0000;  author: leitner;  state: Exp;
+add readme
+=============================================================================
+
+RCS file: /cvs/gatling/README.cgi,v
+Working file: README.cgi
+head: 1.3
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 3;	selected revisions: 3
+description:
+----------------------------
+revision 1.3
+date: 2009-06-02 00:45:50 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+various cosmetic fixes
+export :foo as .foo in FTP
+----------------------------
+revision 1.2
+date: 2005-07-01 11:32:21 +0000;  author: leitner;  state: Exp;  lines: +10 -0
+add support for -C+x (consider all executable files with ELF or shebang
+CGI)
+----------------------------
+revision 1.1
+date: 2005-03-30 14:21:35 +0000;  author: leitner;  state: Exp;
+add CGI documentation
+fix typo in proxy documentation
+=============================================================================
+
+RCS file: /cvs/gatling/README.forkbench,v
+Working file: README.forkbench
+head: 1.1
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 1;	selected revisions: 1
+description:
+----------------------------
+revision 1.1
+date: 2003-10-09 21:41:57 +0000;  author: leitner;  state: Exp;
+disable resource limit in forkbench
+add option in httpbench to not let OS choose the local port number
+=============================================================================
+
+RCS file: /cvs/gatling/README.ftp,v
+Working file: README.ftp
+head: 1.3
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 3;	selected revisions: 3
+description:
+----------------------------
+revision 1.3
+date: 2009-06-02 00:45:50 +0000;  author: leitner;  state: Exp;  lines: +3 -2
+various cosmetic fixes
+export :foo as .foo in FTP
+----------------------------
+revision 1.2
+date: 2003-11-27 00:07:51 +0000;  author: leitner;  state: Exp;  lines: +20 -0
+implement FTP uploads
+add option -U to disallow them
+add option -a to chmod go+r uploads so they can be downloaded immediately by others
+----------------------------
+revision 1.1
+date: 2003-11-26 22:17:29 +0000;  author: leitner;  state: Exp;
+add two READMEs
+support pipelining
+support CDUP for FTP
+=============================================================================
+
+RCS file: /cvs/gatling/README.htaccess,v
+Working file: README.htaccess
+head: 1.2
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 2;	selected revisions: 2
+description:
+----------------------------
+revision 1.2
+date: 2005-10-31 17:55:57 +0000;  author: leitner;  state: Exp;  lines: +3 -0
+  allow .htaccess_global
+----------------------------
+revision 1.1
+date: 2004-12-17 20:47:50 +0000;  author: leitner;  state: Exp;
+now with crude .htaccess support
+=============================================================================
+
+RCS file: /cvs/gatling/README.http,v
+Working file: README.http
+head: 1.2
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 2;	selected revisions: 2
+description:
+----------------------------
+revision 1.2
+date: 2009-06-02 00:45:50 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+various cosmetic fixes
+export :foo as .foo in FTP
+----------------------------
+revision 1.1
+date: 2003-11-26 22:17:29 +0000;  author: leitner;  state: Exp;
+add two READMEs
+support pipelining
+support CDUP for FTP
+=============================================================================
+
+RCS file: /cvs/gatling/README.httpbench,v
+Working file: README.httpbench
+head: 1.4
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 4;	selected revisions: 4
+description:
+----------------------------
+revision 1.4
+date: 2009-06-02 00:45:50 +0000;  author: leitner;  state: Exp;  lines: +3 -3
+various cosmetic fixes
+export :foo as .foo in FTP
+----------------------------
+revision 1.3
+date: 2003-10-09 21:46:47 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+change default invocation in README.httpbench
+----------------------------
+revision 1.2
+date: 2003-10-08 22:44:34 +0000;  author: leitner;  state: Exp;  lines: +45 -2
+add throughput measurement mode to httpbench (-c 1)
+----------------------------
+revision 1.1
+date: 2003-10-07 20:08:07 +0000;  author: leitner;  state: Exp;
+add httpbench, make logging optional for gatling, and add small READMEs
+=============================================================================
+
+RCS file: /cvs/gatling/README.manymapbench,v
+Working file: README.manymapbench
+head: 1.1
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 1;	selected revisions: 1
+description:
+----------------------------
+revision 1.1
+date: 2003-10-23 21:12:56 +0000;  author: leitner;  state: Exp;
+add README for manymapbench
+add volatile to make sure reading the byte is not optimized away
+=============================================================================
+
+RCS file: /cvs/gatling/README.mmapbench,v
+Working file: README.mmapbench
+head: 1.2
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 2;	selected revisions: 2
+description:
+----------------------------
+revision 1.2
+date: 2003-11-11 14:17:19 +0000;  author: leitner;  state: Exp;  lines: +5 -0
+mention bus error
+----------------------------
+revision 1.1
+date: 2003-10-09 22:06:17 +0000;  author: leitner;  state: Exp;
+add documentation for mmapbench
+=============================================================================
+
+RCS file: /cvs/gatling/README.performance,v
+Working file: README.performance
+head: 1.2
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 2;	selected revisions: 2
+description:
+----------------------------
+revision 1.2
+date: 2004-01-14 01:16:18 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+mention AIX 5 success
+----------------------------
+revision 1.1
+date: 2004-01-08 17:33:03 +0000;  author: leitner;  state: Exp;
+add README.performance
+remove iconv warning on solaris
+=============================================================================
+
+RCS file: /cvs/gatling/README.php,v
+Working file: README.php
+head: 1.1
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 1;	selected revisions: 1
+description:
+----------------------------
+revision 1.1
+date: 2010-01-09 02:45:22 +0000;  author: leitner;  state: Exp;
+document the PHP support
+=============================================================================
+
+RCS file: /cvs/gatling/README.polarssl,v
+Working file: README.polarssl
+head: 1.2
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 2;	selected revisions: 2
+description:
+----------------------------
+revision 1.2
+date: 2011-08-19 00:58:43 +0000;  author: leitner;  state: Exp;  lines: +6 -0
+add size statistics
+----------------------------
+revision 1.1
+date: 2011-08-19 00:56:40 +0000;  author: leitner;  state: Exp;
+add small documentation about polarssl
+=============================================================================
+
+RCS file: /cvs/gatling/README.prefetch,v
+Working file: README.prefetch
+head: 1.2
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 2;	selected revisions: 2
+description:
+----------------------------
+revision 1.2
+date: 2004-01-07 19:43:43 +0000;  author: leitner;  state: Exp;  lines: +13 -0
+mention fragmentation in README.prefetch, add readfrag
+----------------------------
+revision 1.1
+date: 2004-01-07 16:16:17 +0000;  author: leitner;  state: Exp;
+add experimental prefetching support
+=============================================================================
+
+RCS file: /cvs/gatling/README.proxy,v
+Working file: README.proxy
+head: 1.6
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 6;	selected revisions: 6
+description:
+----------------------------
+revision 1.6
+date: 2010-01-09 02:45:22 +0000;  author: leitner;  state: Exp;  lines: +0 -2
+document the PHP support
+----------------------------
+revision 1.5
+date: 2005-03-30 14:21:35 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+add CGI documentation
+fix typo in proxy documentation
+----------------------------
+revision 1.4
+date: 2004-07-18 12:28:53 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+-p was renamed to -O
+----------------------------
+revision 1.3
+date: 2004-05-15 01:39:39 +0000;  author: leitner;  state: Exp;  lines: +3 -3
+add POST support
+----------------------------
+revision 1.2
+date: 2004-02-19 22:34:05 +0000;  author: leitner;  state: Exp;  lines: +7 -0
+mention another detail or two
+----------------------------
+revision 1.1
+date: 2004-02-19 22:27:05 +0000;  author: leitner;  state: Exp;
+add cgi proxy support
+=============================================================================
+
+RCS file: /cvs/gatling/README.redirect,v
+Working file: README.redirect
+head: 1.3
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 3;	selected revisions: 3
+description:
+----------------------------
+revision 1.3
+date: 2005-05-17 12:51:36 +0000;  author: leitner;  state: Exp;  lines: +20 -0
+add temporary redirect option
+----------------------------
+revision 1.2
+date: 2005-05-03 15:30:44 +0000;  author: leitner;  state: Exp;  lines: +3 -0
+document index.html redirect
+----------------------------
+revision 1.1
+date: 2004-04-25 18:48:07 +0000;  author: leitner;  state: Exp;
+add broken symlink style redirects
+=============================================================================
+
+RCS file: /cvs/gatling/README.tls,v
+Working file: README.tls
+head: 1.3
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 3;	selected revisions: 3
+description:
+----------------------------
+revision 1.3
+date: 2010-03-23 04:46:35 +0000;  author: leitner;  state: Exp;  lines: +4 -4
+fix documentation
+----------------------------
+revision 1.2
+date: 2008-09-23 15:22:40 +0000;  author: leitner;  state: Exp;  lines: +23 -0
+  add SSH forwarding to SSL support (see README.tls)
+----------------------------
+revision 1.1
+date: 2005-01-31 18:28:08 +0000;  author: leitner;  state: Exp;
+add README.tls
+=============================================================================
+
+RCS file: /cvs/gatling/TODO,v
+Working file: TODO
+head: 1.9
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 9;	selected revisions: 9
+description:
+----------------------------
+revision 1.9
+date: 2005-09-23 10:58:07 +0000;  author: leitner;  state: Exp;  lines: +3 -1
+add Date header
+----------------------------
+revision 1.8
+date: 2005-06-26 18:07:56 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+/server-status
+----------------------------
+revision 1.7
+date: 2004-05-15 01:39:39 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+add POST support
+----------------------------
+revision 1.6
+date: 2004-01-16 22:07:15 +0000;  author: leitner;  state: Exp;  lines: +1 -4
+oops, wrong -h
+----------------------------
+revision 1.5
+date: 2003-10-21 10:55:54 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+mention leaks
+----------------------------
+revision 1.4
+date: 2003-10-02 23:32:46 +0000;  author: leitner;  state: Exp;  lines: +0 -2
+timeout handling
+----------------------------
+revision 1.3
+date: 2003-09-26 19:28:38 +0000;  author: leitner;  state: Exp;  lines: +0 -1
+bugfix
+----------------------------
+revision 1.2
+date: 2003-09-19 15:39:51 +0000;  author: leitner;  state: Exp;  lines: +3 -2
+add if-modified-since, HEAD and HTTP ranges
+----------------------------
+revision 1.1
+date: 2003-09-19 00:42:54 +0000;  author: leitner;  state: Exp;
+small todo list
+=============================================================================
+
+RCS file: /cvs/gatling/acc.c,v
+Working file: acc.c
+head: 1.6
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 6;	selected revisions: 6
+description:
+----------------------------
+revision 1.6
+date: 2011-06-27 22:56:57 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+fix off-by-one in acc, and silence compiler warning in rellink.c
+----------------------------
+revision 1.5
+date: 2009-08-03 22:07:57 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+fix non-x86 syntax error
+----------------------------
+revision 1.4
+date: 2008-12-05 12:12:39 +0000;  author: leitner;  state: Exp;  lines: +91 -2
+optimize from 29 sec down to 8 on my test log file
+----------------------------
+revision 1.3
+date: 2007-10-09 00:49:07 +0000;  author: leitner;  state: Exp;  lines: +2 -3
+better hash function in acc
+add multi-ranges (only used by the Acrobat Reader plugin AFAIK)
+----------------------------
+revision 1.2
+date: 2006-06-01 06:13:17 +0000;  author: leitner;  state: Exp;  lines: +3 -0
+set larger output buffer
+----------------------------
+revision 1.1
+date: 2006-06-01 05:37:13 +0000;  author: leitner;  state: Exp;
+C version of acc.pl (much faster)
+=============================================================================
+
+RCS file: /cvs/gatling/acc.pl,v
+Working file: acc.pl
+head: 1.3
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 3;	selected revisions: 3
+description:
+----------------------------
+revision 1.3
+date: 2009-04-09 17:12:23 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+fix hitprofile build
+----------------------------
+revision 1.2
+date: 2005-10-22 01:24:52 +0000;  author: leitner;  state: Exp;  lines: +7 -0
+put real URLs in the acc.pl output, so they can be cut and pasted
+----------------------------
+revision 1.1
+date: 2005-09-29 12:21:48 +0000;  author: leitner;  state: Exp;
+Add cookie mode and accumulation perl script
+=============================================================================
+
+RCS file: /cvs/gatling/bench.1,v
+Working file: bench.1
+head: 1.1
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 1;	selected revisions: 1
+description:
+----------------------------
+revision 1.1
+date: 2005-09-29 12:21:48 +0000;  author: leitner;  state: Exp;
+Add cookie mode and accumulation perl script
+=============================================================================
+
+RCS file: /cvs/gatling/bench.c,v
+Working file: bench.c
+head: 1.20
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 20;	selected revisions: 20
+description:
+----------------------------
+revision 1.20
+date: 2012-04-10 23:07:01 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+  make use of new libowfat API to reduce syscalls
+----------------------------
+revision 1.19
+date: 2012-01-13 03:24:45 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+polarssl compile update
+bench usage update
+----------------------------
+revision 1.18
+date: 2010-01-19 03:02:29 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+bsd
+----------------------------
+revision 1.17
+date: 2009-08-17 01:55:38 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+make gatling compile without SUPPORT_PROXY defined
+wrap alloca usage in tryalloca from libowfat
+----------------------------
+revision 1.16
+date: 2008-02-19 16:12:58 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+pull in openssl -lcrypto for md5 on non-dietlibc platforms
+----------------------------
+revision 1.15
+date: 2006-10-04 22:38:13 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+avoid division by zero of there were 0 requests
+----------------------------
+revision 1.14
+date: 2006-07-27 05:24:39 +0000;  author: leitner;  state: Exp;  lines: +31 -5
+some half-assed Windows port (broken)
+use setresuid/setresgid if available
+don't flood console with error messages but count them instead in bench
+----------------------------
+revision 1.13
+date: 2006-05-18 06:18:50 +0000;  author: leitner;  state: Exp;  lines: +0 -2
+adapt to libowfat socket_tcp* actually putting the sockets in
+non-blocking mode as documented all along
+----------------------------
+revision 1.12
+date: 2005-10-07 19:21:17 +0000;  author: leitner;  state: Exp;  lines: +22 -8
+better report mode for bench
+MIME magic support for gatling
+----------------------------
+revision 1.11
+date: 2005-10-07 18:11:55 +0000;  author: leitner;  state: Exp;  lines: +30 -15
+add report mode
+----------------------------
+revision 1.10
+date: 2005-09-29 12:21:48 +0000;  author: leitner;  state: Exp;  lines: +57 -4
+Add cookie mode and accumulation perl script
+----------------------------
+revision 1.9
+date: 2005-09-23 10:58:07 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+add Date header
+----------------------------
+revision 1.8
+date: 2005-09-01 17:26:19 +0000;  author: leitner;  state: Exp;  lines: +118 -18
+update bench so it can read urls from stdin
+----------------------------
+revision 1.7
+date: 2005-08-24 18:43:11 +0000;  author: leitner;  state: Exp;  lines: +15 -6
+fix non-keepalive mode of bench
+----------------------------
+revision 1.6
+date: 2005-08-24 16:21:22 +0000;  author: leitner;  state: Exp;  lines: +2 -1
+continue working if we get more bytes than announced
+----------------------------
+revision 1.5
+date: 2005-08-24 15:33:11 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+bsd fix
+----------------------------
+revision 1.4
+date: 2005-07-25 18:59:00 +0000;  author: leitner;  state: Exp;  lines: +8 -2
+move bench before tlsgatling
+bench now outputs the request rate
+----------------------------
+revision 1.3
+date: 2005-07-25 18:37:23 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+don't include <getopt.h>
+----------------------------
+revision 1.2
+date: 2005-07-25 12:25:17 +0000;  author: leitner;  state: Exp;  lines: +19 -2
+also output which server we are measuring
+----------------------------
+revision 1.1
+date: 2005-07-25 11:37:32 +0000;  author: leitner;  state: Exp;
+add simple HTTP benchmark tool
+=============================================================================
+
+RCS file: /cvs/gatling/bindbench.c,v
+Working file: bindbench.c
+head: 1.7
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 7;	selected revisions: 7
+description:
+----------------------------
+revision 1.7
+date: 2004-01-08 15:31:27 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+remove more warnings
+----------------------------
+revision 1.6
+date: 2003-11-07 00:39:58 +0000;  author: leitner;  state: Exp;  lines: +4 -0
+slight tweak to bindbench to not measure BSD fast path
+----------------------------
+revision 1.5
+date: 2003-11-06 21:30:28 +0000;  author: leitner;  state: Exp;  lines: +17 -3
+Solaris portability fixes
+bindbench now checks whether the socket() and bind() actually worked (duh)
+----------------------------
+revision 1.4
+date: 2003-10-10 16:22:26 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+oops, one zero too much
+----------------------------
+revision 1.3
+date: 2003-10-09 22:34:20 +0000;  author: leitner;  state: Exp;  lines: +28 -2
+make bindbench use the cycle counter as well
+----------------------------
+revision 1.2
+date: 2003-10-09 17:29:39 +0000;  author: leitner;  state: Exp;  lines: +0 -5
+add mmapbench
+----------------------------
+revision 1.1
+date: 2003-10-09 12:37:34 +0000;  author: leitner;  state: Exp;
+add bindbench
+=============================================================================
+
+RCS file: /cvs/gatling/cgi.c,v
+Working file: cgi.c
+head: 1.5
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 5;	selected revisions: 5
+description:
+----------------------------
+revision 1.5
+date: 2011-08-18 13:29:13 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+several polarssl, scgi and fastcgi fixes
+----------------------------
+revision 1.4
+date: 2010-01-09 02:29:56 +0000;  author: leitner;  state: Exp;  lines: +9 -0
+fastcgi!!
+----------------------------
+revision 1.3
+date: 2010-01-05 14:37:47 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+fix CGI POST
+add some state machine debugging code
+----------------------------
+revision 1.2
+date: 2008-11-13 17:49:33 +0000;  author: leitner;  state: Exp;  lines: +51 -0
+  add matchiprange (see comment at top of matchiprange.c)
+----------------------------
+revision 1.1
+date: 2005-04-23 15:51:48 +0000;  author: leitner;  state: Exp;
+  gcc 4 unsigned char* <-> char* cleanups
+=============================================================================
+
+RCS file: /cvs/gatling/common.c,v
+Working file: common.c
+head: 1.8
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 8;	selected revisions: 8
+description:
+----------------------------
+revision 1.8
+date: 2012-11-02 10:18:50 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+prevent directory traversal if it is ../etc/passwd instead of foo/../etc/passwd (Jann Horn)
+----------------------------
+revision 1.7
+date: 2010-08-29 09:14:15 +0000;  author: leitner;  state: Exp;  lines: +8 -4
+fix path normalization
+----------------------------
+revision 1.6
+date: 2010-07-20 23:47:56 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+check for people connecting to the SSL port but not sending SSL traffic
+----------------------------
+revision 1.5
+date: 2010-01-05 14:37:47 +0000;  author: leitner;  state: Exp;  lines: +46 -0
+fix CGI POST
+add some state machine debugging code
+----------------------------
+revision 1.4
+date: 2009-08-17 01:55:38 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+make gatling compile without SUPPORT_PROXY defined
+wrap alloca usage in tryalloca from libowfat
+----------------------------
+revision 1.3
+date: 2009-06-02 00:45:50 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+various cosmetic fixes
+export :foo as .foo in FTP
+----------------------------
+revision 1.2
+date: 2008-01-31 21:46:13 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+now type \\machine\pub\filename.txt works against gatling's SMB from
+Vista
+----------------------------
+revision 1.1
+date: 2007-10-17 16:21:59 +0000;  author: leitner;  state: Exp;
+work on SMB support
+=============================================================================
+
+RCS file: /cvs/gatling/connstat.c,v
+Working file: connstat.c
+head: 1.4
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 4;	selected revisions: 4
+description:
+----------------------------
+revision 1.4
+date: 2011-06-17 14:13:34 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+sizeof() on a function argument of type "char ip[16]" returns
+sizeof(char*) not 16.  Found by Andreas Krennmair.
+----------------------------
+revision 1.3
+date: 2008-04-12 17:53:28 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+add <time.h>
+----------------------------
+revision 1.2
+date: 2008-04-12 17:40:11 +0000;  author: leitner;  state: Exp;  lines: +0 -1
+connstat.h was removed
+----------------------------
+revision 1.1
+date: 2008-04-08 05:34:07 +0000;  author: leitner;  state: Exp;
+  add lame anti-DOS support (see README.antidos)
+I also changed the macro generated by genofsmacro.pl to use sizeof to
+prevent gcc warnings about out-of-bounds array accesses (that were never
+actually triggered because those accesses were optimized out by the
+compiler, but it still warned about them)
+=============================================================================
+
+RCS file: /cvs/gatling/dl.c,v
+Working file: dl.c
+head: 1.74
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 74;	selected revisions: 74
+description:
+----------------------------
+revision 1.74
+date: 2012-11-02 10:31:49 +0000;  author: leitner;  state: Exp;  lines: +22 -5
+  fix directory traversal in FTP (Jann Horn)
+----------------------------
+revision 1.73
+date: 2012-02-17 03:23:38 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+proxy mode failed if there was a redirect response
+----------------------------
+revision 1.72
+date: 2012-01-20 17:03:45 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+some fixes
+----------------------------
+revision 1.71
+date: 2011-03-31 04:05:55 +0000;  author: leitner;  state: Exp;  lines: +8 -2
+add -I option
+----------------------------
+revision 1.70
+date: 2010-08-25 10:14:26 +0000;  author: leitner;  state: Exp;  lines: +4 -2
+allow dl -O- ftp://server/file.ext
+----------------------------
+revision 1.69
+date: 2010-08-20 03:36:42 +0000;  author: leitner;  state: Exp;  lines: +101 -5
+more valgrind cleanup
+----------------------------
+revision 1.68
+date: 2010-01-27 18:21:28 +0000;  author: leitner;  state: Exp;  lines: +21 -2
+work around crappy httpds like at dl.google.com
+----------------------------
+revision 1.67
+date: 2009-08-23 04:37:55 +0000;  author: leitner;  state: Exp;  lines: +34 -16
+in active FTP mode, only wait for incoming connection after NLST or
+RETR
+----------------------------
+revision 1.66
+date: 2009-08-17 02:00:12 +0000;  author: leitner;  state: Exp;  lines: +10 -0
+provide strndup on non-Linux platforms
+----------------------------
+revision 1.65
+date: 2009-08-17 01:55:38 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+make gatling compile without SUPPORT_PROXY defined
+wrap alloca usage in tryalloca from libowfat
+----------------------------
+revision 1.64
+date: 2009-08-16 14:44:18 +0000;  author: leitner;  state: Exp;  lines: +8 -0
+url-decode
+----------------------------
+revision 1.63
+date: 2009-05-28 00:49:01 +0000;  author: leitner;  state: Exp;  lines: +35 -7
+  add proxy support to dl ($http_proxy and $ftp_proxy like libwww)
+----------------------------
+revision 1.62
+date: 2009-05-28 00:47:44 +0000;  author: leitner;  state: Exp;  lines: +13 -6
+add -s flag
+----------------------------
+revision 1.61
+date: 2009-04-09 17:13:03 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+reduce warnings
+----------------------------
+revision 1.60
+date: 2009-03-12 15:37:17 +0000;  author: leitner;  state: Exp;  lines: +13 -3
+support relative redirects (Location: /fnord instead of Location:
+http://foo/fnord)
+----------------------------
+revision 1.59
+date: 2009-01-16 16:27:23 +0000;  author: leitner;  state: Exp;  lines: +8 -7
+fix smb stats display
+----------------------------
+revision 1.58
+date: 2008-11-27 14:32:17 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+work around broken sqlite download httpd
+----------------------------
+revision 1.57
+date: 2008-08-18 15:05:55 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+fix dl -O-
+----------------------------
+revision 1.56
+date: 2008-07-21 11:29:46 +0000;  author: leitner;  state: Exp;  lines: +4 -2
+don't send PASS for FTP when USER returned 2xx
+----------------------------
+revision 1.55
+date: 2008-05-06 00:31:02 +0000;  author: leitner;  state: Exp;  lines: +6 -1
+more vista compat
+add ipv4 fallback to dl
+----------------------------
+revision 1.54
+date: 2008-04-29 05:48:09 +0000;  author: leitner;  state: Exp;  lines: +148 -8
+  sort the other way around in referer
+  dl in http mode now supports cookies and sets the referer
+----------------------------
+revision 1.53
+date: 2008-03-09 19:49:39 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+fix stupid http redirect bug
+----------------------------
+revision 1.52
+date: 2008-02-26 00:53:21 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+fix dl -O- for smb
+change old SMB code to not keep state in static char arrays so we can
+  later switch to multiple threads
+----------------------------
+revision 1.51
+date: 2008-02-20 16:21:52 +0000;  author: leitner;  state: Exp;  lines: +7 -0
+set TCP_NODELAY in dl
+----------------------------
+revision 1.50
+date: 2008-02-20 13:03:14 +0000;  author: leitner;  state: Exp;  lines: +16 -13
+better time resolution for the throughput statistics
+----------------------------
+revision 1.49
+date: 2008-01-22 21:30:43 +0000;  author: leitner;  state: Exp;  lines: +5 -3
+send http request looking more like wget
+----------------------------
+revision 1.48
+date: 2008-01-14 23:25:22 +0000;  author: leitner;  state: Exp;  lines: +17 -6
+make stats nicer
+----------------------------
+revision 1.47
+date: 2008-01-14 23:17:42 +0000;  author: leitner;  state: Exp;  lines: +11 -6
+fix stats display for "size unknown" and "resume" cases
+display proper ftp file not found error message
+----------------------------
+revision 1.46
+date: 2008-01-14 03:13:05 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+use user "anonymous" instead of "ftp" (matters in very rare cases)
+----------------------------
+revision 1.45
+date: 2008-01-14 01:25:59 +0000;  author: leitner;  state: Exp;  lines: +24 -4
+add pipeline mode for smb download in dl
+----------------------------
+revision 1.44
+date: 2008-01-14 01:08:43 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+add download stats for smb mode in dl
+----------------------------
+revision 1.43
+date: 2008-01-14 01:01:06 +0000;  author: leitner;  state: Exp;  lines: +400 -7
+add SMB client support in dl
+support CreateFile in gatling
+----------------------------
+revision 1.42
+date: 2007-10-17 21:57:58 +0000;  author: leitner;  state: Exp;  lines: +12 -2
+mention throughput in dl stats diagnostic
+----------------------------
+revision 1.41
+date: 2007-09-16 18:04:37 +0000;  author: leitner;  state: Exp;  lines: +23 -5
+add -l parameter to dl to make only print the Location header
+----------------------------
+revision 1.40
+date: 2007-09-08 18:50:04 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+fix bad memory management
+----------------------------
+revision 1.39
+date: 2007-09-08 18:41:22 +0000;  author: leitner;  state: Exp;  lines: +2 -1
+fix setfault
+----------------------------
+revision 1.38
+date: 2007-08-19 00:44:10 +0000;  author: leitner;  state: Exp;  lines: +12 -1
+clear stats
+----------------------------
+revision 1.37
+date: 2007-08-04 23:09:08 +0000;  author: leitner;  state: Exp;  lines: +113 -6
+  make dl print some statistics if stderr is a TTY
+----------------------------
+revision 1.36
+date: 2007-07-21 15:04:53 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+exit nonzero on timeout
+----------------------------
+revision 1.35
+date: 2007-07-09 21:27:29 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+fix dl if http header is larger than first packet (youtube)
+----------------------------
+revision 1.34
+date: 2007-05-02 06:14:40 +0000;  author: leitner;  state: Exp;  lines: +8 -2
+  dl: when printing an ftp directory listing, filter \r
+  dl: in -i mode, don't complain if utime fails
+----------------------------
+revision 1.33
+date: 2007-05-02 06:02:06 +0000;  author: leitner;  state: Exp;  lines: +10 -1
+when writing an ftp directory listing to stdout, remove \r
+----------------------------
+revision 1.32
+date: 2007-04-10 04:23:08 +0000;  author: leitner;  state: Exp;  lines: +4 -1
+  fix memory leak in proxy_connection() (Johannes Vetter)
+----------------------------
+revision 1.31
+date: 2007-02-04 22:23:15 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+unsigned long -> size_t for fmt_urlencoded (Johannes Ziemke)
+----------------------------
+revision 1.30
+date: 2006-07-27 05:24:39 +0000;  author: leitner;  state: Exp;  lines: +27 -14
+some half-assed Windows port (broken)
+use setresuid/setresgid if available
+don't flood console with error messages but count them instead in bench
+----------------------------
+revision 1.29
+date: 2006-05-18 06:18:50 +0000;  author: leitner;  state: Exp;  lines: +7 -0
+adapt to libowfat socket_tcp* actually putting the sockets in
+non-blocking mode as documented all along
+----------------------------
+revision 1.28
+date: 2005-11-24 15:28:02 +0000;  author: leitner;  state: Exp;  lines: +31 -2
+make dl follow http redirects
+----------------------------
+revision 1.27
+date: 2005-10-09 00:28:52 +0000;  author: leitner;  state: Exp;  lines: +7 -2
+allow dl -O -
+----------------------------
+revision 1.26
+date: 2005-10-06 22:46:36 +0000;  author: leitner;  state: Exp;  lines: +22 -5
+remove huge from taia seconds when printing Date (mattered on 64-bit
+systems where time_t is 64 bits)
+add -U and -R to dl (set user-agent and referer)
+----------------------------
+revision 1.25
+date: 2005-10-06 16:44:32 +0000;  author: leitner;  state: Exp;  lines: +16 -5
+make dl more versatile
+----------------------------
+revision 1.24
+date: 2005-08-17 15:06:31 +0000;  author: leitner;  state: Exp;  lines: +3 -2
+void sighandler_t for broken no-good systems like *BSD
+----------------------------
+revision 1.23
+date: 2005-08-05 16:02:37 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+fix PASV FTP dl
+----------------------------
+revision 1.22
+date: 2005-08-05 15:46:25 +0000;  author: leitner;  state: Exp;  lines: +6 -5
+FTP PORT fixes
+----------------------------
+revision 1.21
+date: 2005-08-05 15:31:29 +0000;  author: leitner;  state: Exp;  lines: +2 -1
+also install dl
+----------------------------
+revision 1.20
+date: 2005-08-05 15:28:37 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+fix active mode ftp
+----------------------------
+revision 1.19
+date: 2005-08-05 15:10:34 +0000;  author: leitner;  state: Exp;  lines: +3 -3
+Fix PASV response
+Fix dl MDTV to use full path
+----------------------------
+revision 1.18
+date: 2005-06-26 18:07:56 +0000;  author: leitner;  state: Exp;  lines: +19 -3
+/server-status
+----------------------------
+revision 1.17
+date: 2005-05-19 05:30:48 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+try to work around Fedora gcc
+----------------------------
+revision 1.16
+date: 2005-04-23 15:51:48 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+  gcc 4 unsigned char* <-> char* cleanups
+----------------------------
+revision 1.15
+date: 2005-01-28 11:57:35 +0000;  author: leitner;  state: Exp;  lines: +2 -1
+-4 should also limit connection attempts to ipv4
+----------------------------
+revision 1.14
+date: 2004-07-15 15:10:36 +0000;  author: leitner;  state: Exp;  lines: +22 -0
+don't escape % again in dl
+----------------------------
+revision 1.13
+date: 2004-05-27 20:43:05 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+oops, wrong message
+----------------------------
+revision 1.12
+date: 2004-05-10 20:40:56 +0000;  author: leitner;  state: Exp;  lines: +51 -11
+add resume support to dl
+----------------------------
+revision 1.11
+date: 2004-01-23 16:30:19 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+large file support
+----------------------------
+revision 1.10
+date: 2004-01-14 01:13:22 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+also include <time.h>
+----------------------------
+revision 1.9
+date: 2004-01-06 23:31:52 +0000;  author: leitner;  state: Exp;  lines: +23 -10
+add NLST mode
+----------------------------
+revision 1.8
+date: 2004-01-06 23:26:46 +0000;  author: leitner;  state: Exp;  lines: +6 -1
+better -h text
+----------------------------
+revision 1.7
+date: 2004-01-06 23:24:09 +0000;  author: leitner;  state: Exp;  lines: +2 -1
+continuation bug fix
+----------------------------
+revision 1.6
+date: 2004-01-06 22:58:04 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+sys/stat.h was missing
+----------------------------
+revision 1.5
+date: 2004-01-06 23:09:27 +0000;  author: leitner;  state: Exp;  lines: +319 -66
+add ftp mode to dl
+add -i and -n to allow use of dl in mirroring
+----------------------------
+revision 1.4
+date: 2003-11-06 21:30:28 +0000;  author: leitner;  state: Exp;  lines: +7 -14
+Solaris portability fixes
+bindbench now checks whether the socket() and bind() actually worked (duh)
+----------------------------
+revision 1.3
+date: 2003-10-10 17:31:05 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+strlen -> str_len
+----------------------------
+revision 1.2
+date: 2003-10-10 17:24:43 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+#include <textcode.h>
+----------------------------
+revision 1.1
+date: 2003-10-09 01:16:59 +0000;  author: leitner;  state: Exp;
+add small download program for testing
+=============================================================================
+
+RCS file: /cvs/gatling/Attic/features.h,v
+Working file: features.h
+head: 1.3
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 3;	selected revisions: 3
+description:
+----------------------------
+revision 1.3
+date: 2008-01-31 17:33:47 +0000;  author: leitner;  state: dead;  lines: +0 -0
+make gatling compile under glibc again
+fix broken smb handle freeing
+----------------------------
+revision 1.2
+date: 2007-10-17 16:21:59 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+work on SMB support
+----------------------------
+revision 1.1
+date: 2007-10-12 13:31:23 +0000;  author: leitner;  state: Exp;
+split up gatling.c for maintainability
+=============================================================================
+
+RCS file: /cvs/gatling/forkbench.c,v
+Working file: forkbench.c
+head: 1.13
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 13;	selected revisions: 13
+description:
+----------------------------
+revision 1.13
+date: 2003-11-07 00:28:57 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+flush on error
+----------------------------
+revision 1.12
+date: 2003-11-06 21:30:28 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+Solaris portability fixes
+bindbench now checks whether the socket() and bind() actually worked (duh)
+----------------------------
+revision 1.11
+date: 2003-10-23 22:06:18 +0000;  author: leitner;  state: Exp;  lines: +7 -6
+set limit to count+2, not infinity
+----------------------------
+revision 1.10
+date: 2003-10-23 22:05:39 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+oops, printed the wrong number
+----------------------------
+revision 1.9
+date: 2003-10-23 10:40:08 +0000;  author: leitner;  state: Exp;  lines: +20 -10
+also take time for reaping in forkbench (suggested by Niels Provos)
+----------------------------
+revision 1.8
+date: 2003-10-11 15:00:30 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+add pthreadbench
+----------------------------
+revision 1.7
+date: 2003-10-10 16:22:26 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+oops, one zero too much
+----------------------------
+revision 1.6
+date: 2003-10-10 15:21:50 +0000;  author: leitner;  state: Exp;  lines: +1 -5
+NetBSD does not have sigwait either!!
+Damn, what now?  I'll sleep for 5 minutes instead.  Duh.
+----------------------------
+revision 1.5
+date: 2003-10-09 23:59:12 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+use sigwait, not sigwaitinfo
+----------------------------
+revision 1.4
+date: 2003-10-09 23:06:30 +0000;  author: leitner;  state: Exp;  lines: +2 -1
+flush early and tell user that we are about to kill the children
+----------------------------
+revision 1.3
+date: 2003-10-09 22:56:40 +0000;  author: leitner;  state: Exp;  lines: +3 -3
+add run-bench, fix forkbench help text
+----------------------------
+revision 1.2
+date: 2003-10-09 21:41:57 +0000;  author: leitner;  state: Exp;  lines: +8 -0
+disable resource limit in forkbench
+add option in httpbench to not let OS choose the local port number
+----------------------------
+revision 1.1
+date: 2003-10-09 21:26:29 +0000;  author: leitner;  state: Exp;
+add forkbench
+=============================================================================
+
+RCS file: /cvs/gatling/ftp.c,v
+Working file: ftp.c
+head: 1.11
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 11;	selected revisions: 11
+description:
+----------------------------
+revision 1.11
+date: 2012-04-10 23:07:01 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+  make use of new libowfat API to reduce syscalls
+----------------------------
+revision 1.10
+date: 2010-08-24 01:51:31 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+prevent double-close of fd
+----------------------------
+revision 1.9
+date: 2010-01-08 17:07:42 +0000;  author: leitner;  state: Exp;  lines: +4 -4
+SCGI support
+----------------------------
+revision 1.8
+date: 2010-01-05 14:37:47 +0000;  author: leitner;  state: Exp;  lines: +17 -4
+fix CGI POST
+add some state machine debugging code
+----------------------------
+revision 1.7
+date: 2009-08-17 01:55:38 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+make gatling compile without SUPPORT_PROXY defined
+wrap alloca usage in tryalloca from libowfat
+----------------------------
+revision 1.6
+date: 2009-08-12 22:26:23 +0000;  author: leitner;  state: Exp;  lines: +17 -1
+work around bug spotted at HAR
+----------------------------
+revision 1.5
+date: 2009-06-02 00:45:50 +0000;  author: leitner;  state: Exp;  lines: +2 -1
+various cosmetic fixes
+export :foo as .foo in FTP
+----------------------------
+revision 1.4
+date: 2008-02-26 02:39:50 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+some more range checks (must recheck if windows still works)
+----------------------------
+revision 1.3
+date: 2007-10-17 20:22:51 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+bsd compat
+----------------------------
+revision 1.2
+date: 2007-10-17 16:21:59 +0000;  author: leitner;  state: Exp;  lines: +4 -25
+work on SMB support
+----------------------------
+revision 1.1
+date: 2007-10-12 13:31:23 +0000;  author: leitner;  state: Exp;
+split up gatling.c for maintainability
+=============================================================================
+
+RCS file: /cvs/gatling/gatling.1,v
+Working file: gatling.1
+head: 1.11
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 11;	selected revisions: 11
+description:
+----------------------------
+revision 1.11
+date: 2010-04-04 18:32:09 +0000;  author: leitner;  state: Exp;  lines: +4 -0
+support fastcgi via unix domain sockets
+----------------------------
+revision 1.10
+date: 2010-01-09 02:45:22 +0000;  author: leitner;  state: Exp;  lines: +10 -1
+document the PHP support
+----------------------------
+revision 1.9
+date: 2008-12-05 12:38:28 +0000;  author: leitner;  state: Exp;  lines: +2 -1
+add openssl exception
+----------------------------
+revision 1.8
+date: 2008-09-23 15:22:40 +0000;  author: leitner;  state: Exp;  lines: +8 -1
+  add SSH forwarding to SSL support (see README.tls)
+----------------------------
+revision 1.7
+date: 2005-07-01 11:32:21 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+add support for -C+x (consider all executable files with ELF or shebang
+CGI)
+----------------------------
+revision 1.6
+date: 2005-05-17 12:51:36 +0000;  author: leitner;  state: Exp;  lines: +5 -0
+add temporary redirect option
+----------------------------
+revision 1.5
+date: 2005-02-18 23:11:33 +0000;  author: leitner;  state: Exp;  lines: +6 -0
+gatling is GPL code.  Communicate it.
+----------------------------
+revision 1.4
+date: 2004-12-03 23:09:17 +0000;  author: leitner;  state: Exp;  lines: +7 -2
+document the SSL command line options
+----------------------------
+revision 1.3
+date: 2004-11-26 19:24:59 +0000;  author: leitner;  state: Exp;  lines: +5 -1
+document -l
+----------------------------
+revision 1.2
+date: 2004-05-15 01:39:39 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+add POST support
+----------------------------
+revision 1.1
+date: 2004-05-08 00:28:07 +0000;  author: leitner;  state: Exp;
+it really is gatling.1, not gatling.8
+=============================================================================
+
+RCS file: /cvs/gatling/Attic/gatling.8,v
+Working file: gatling.8
+head: 1.2
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 2;	selected revisions: 2
+description:
+----------------------------
+revision 1.2
+date: 2004-05-08 00:28:07 +0000;  author: leitner;  state: dead;  lines: +0 -0
+it really is gatling.1, not gatling.8
+----------------------------
+revision 1.1
+date: 2004-02-24 01:27:09 +0000;  author: leitner;  state: Exp;
+add man page
+=============================================================================
+
+RCS file: /cvs/gatling/gatling.c,v
+Working file: gatling.c
+head: 1.279
+branch:
+locks: strict
+access list:
+symbolic names:
+	init: 1.1.1.1
+	fefe: 1.1.1
+keyword substitution: kv
+total revisions: 280;	selected revisions: 280
+description:
+----------------------------
+revision 1.279
+date: 2012-11-02 10:31:49 +0000;  author: leitner;  state: Exp;  lines: +1 -2
+  fix directory traversal in FTP (Jann Horn)
+----------------------------
+revision 1.278
+date: 2012-06-13 17:22:12 +0000;  author: leitner;  state: Exp;  lines: +13 -2
+unbreak SMB
+----------------------------
+revision 1.277
+date: 2012-05-27 03:38:08 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+allow TLS 1.2
+----------------------------
+revision 1.276
+date: 2012-04-10 23:07:01 +0000;  author: leitner;  state: Exp;  lines: +11 -8
+  make use of new libowfat API to reduce syscalls
+----------------------------
+revision 1.275
+date: 2012-01-20 17:03:45 +0000;  author: leitner;  state: Exp;  lines: +74 -59
+some fixes
+----------------------------
+revision 1.274
+date: 2011-11-23 21:42:26 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+fix ssl protocol error infinite loop
+----------------------------
+revision 1.273
+date: 2011-11-21 17:24:11 +0000;  author: leitner;  state: Exp;  lines: +5 -14
+  fix crash bug on I/O errors inside SSL connections
+----------------------------
+revision 1.272
+date: 2011-11-02 15:49:01 +0000;  author: leitner;  state: Exp;  lines: +21 -1
+enable core dumping if compiled without optimization (i.e. in debug mode)
+----------------------------
+revision 1.271
+date: 2011-08-19 00:50:49 +0000;  author: leitner;  state: Exp;  lines: +9 -10
+polarssl compile fix
+----------------------------
+revision 1.270
+date: 2011-08-18 13:35:25 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+further linux-vserver workaround attempt
+----------------------------
+revision 1.269
+date: 2011-08-18 13:29:13 +0000;  author: leitner;  state: Exp;  lines: +6 -43
+several polarssl, scgi and fastcgi fixes
+----------------------------
+revision 1.268
+date: 2011-08-17 21:50:03 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+fix polarssl support to work without polarssl
+----------------------------
+revision 1.267
+date: 2011-08-17 21:46:10 +0000;  author: leitner;  state: Exp;  lines: +12 -2
+attempt to work around linux-vserver
+----------------------------
+revision 1.266
+date: 2011-06-26 21:24:36 +0000;  author: leitner;  state: Exp;  lines: +15 -2
+work around error handling in polarssl
+----------------------------
+revision 1.265
+date: 2011-05-12 21:11:01 +0000;  author: leitner;  state: Exp;  lines: +61 -3
+add initial polarssl support (run "make ptlsgatling" to try it out)
+----------------------------
+revision 1.264
+date: 2010-08-20 03:36:42 +0000;  author: leitner;  state: Exp;  lines: +3 -0
+more valgrind cleanup
+----------------------------
+revision 1.263
+date: 2010-08-18 22:45:29 +0000;  author: leitner;  state: Exp;  lines: +36 -2
+add (really crappy) -L limit-to-lan option that actually limits to rfc1918
+support smb 0x23 query information2 that newer libsmbclient uses
+----------------------------
+revision 1.262
+date: 2010-08-13 22:31:08 +0000;  author: leitner;  state: Exp;  lines: +9 -0
+valgrind cosmetics
+----------------------------
+revision 1.261
+date: 2010-07-21 17:32:40 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+connection accounting fix
+----------------------------
+revision 1.260
+date: 2010-07-21 17:32:21 +0000;  author: leitner;  state: Exp;  lines: +28 -21
+more lenient ssl check
+----------------------------
+revision 1.259
+date: 2010-07-21 02:01:40 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+reduce tarpit von 60 to 10 seconds
+----------------------------
+revision 1.258
+date: 2010-07-21 01:57:12 +0000;  author: leitner;  state: Exp;  lines: +6 -0
+print ip in close/not_*
+----------------------------
+revision 1.257
+date: 2010-07-21 01:51:54 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+change error message
+----------------------------
+revision 1.256
+date: 2010-07-21 01:09:14 +0000;  author: leitner;  state: Exp;  lines: +34 -4
+add some easy punk-busting for HTTP, too
+----------------------------
+revision 1.255
+date: 2010-07-21 00:49:48 +0000;  author: leitner;  state: Exp;  lines: +3 -1
+tarpit instead of drop?
+----------------------------
+revision 1.254
+date: 2010-07-20 23:47:56 +0000;  author: leitner;  state: Exp;  lines: +29 -4
+check for people connecting to the SSL port but not sending SSL traffic
+----------------------------
+revision 1.253
+date: 2010-07-20 23:25:09 +0000;  author: leitner;  state: Exp;  lines: +22 -0
+add service to gatling log output for accept lines
+----------------------------
+revision 1.252
+date: 2010-04-04 18:32:09 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+support fastcgi via unix domain sockets
+----------------------------
+revision 1.251
+date: 2010-01-20 20:15:35 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+fix proxy/CGI via https
+set HTTPS=1 in CGI if accessed via https
+----------------------------
+revision 1.250
+date: 2010-01-11 00:09:38 +0000;  author: leitner;  state: Exp;  lines: +7 -3
+add an -I option so you can tell gatling to try index.php, too, in
+addition to index.html
+----------------------------
+revision 1.249
+date: 2010-01-09 02:29:56 +0000;  author: leitner;  state: Exp;  lines: +4 -15
+fastcgi!!
+----------------------------
+revision 1.248
+date: 2010-01-08 17:07:42 +0000;  author: leitner;  state: Exp;  lines: +28 -10
+SCGI support
+----------------------------
+revision 1.247
+date: 2010-01-05 14:37:47 +0000;  author: leitner;  state: Exp;  lines: +23 -60
+fix CGI POST
+add some state machine debugging code
+----------------------------
+revision 1.246
+date: 2009-10-11 16:28:22 +0000;  author: leitner;  state: Exp;  lines: +11 -32
+shift-or -> boyer moore
+----------------------------
+revision 1.245
+date: 2009-10-11 14:13:38 +0000;  author: leitner;  state: Exp;  lines: +29 -0
+two small optimizations that probably not make a difference except in
+very specific benchmarks
+----------------------------
+revision 1.244
+date: 2009-10-09 19:50:13 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+finally implement find_next in smb; now gatling can transfer directories
+larger than 100 files
+----------------------------
+revision 1.243
+date: 2009-09-12 23:05:39 +0000;  author: leitner;  state: Exp;  lines: +4 -1
+auch ohne SUPPORT_FTP kompilen :-(
+----------------------------
+revision 1.242
+date: 2009-08-17 01:55:38 +0000;  author: leitner;  state: Exp;  lines: +4 -1
+make gatling compile without SUPPORT_PROXY defined
+wrap alloca usage in tryalloca from libowfat
+----------------------------
+revision 1.241
+date: 2009-08-15 09:08:33 +0000;  author: leitner;  state: Exp;  lines: +3 -1
+remove another assertion failure
+----------------------------
+revision 1.240
+date: 2009-08-12 15:19:48 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+support SUPPORT_MULTIPROC
+----------------------------
+revision 1.239
+date: 2009-08-11 18:58:03 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+  close ftp-uploaded files in cleanup() (Johannes Ziemke)
+----------------------------
+revision 1.238
+date: 2009-08-01 16:48:19 +0000;  author: leitner;  state: Exp;  lines: +6 -5
+fix openbsd ftp and symlinks in dir listing
+----------------------------
+revision 1.237
+date: 2009-06-01 16:42:22 +0000;  author: leitner;  state: Exp;  lines: +1 -3
+  setuid in the forkslave, too
+----------------------------
+revision 1.236
+date: 2009-05-28 16:41:05 +0000;  author: leitner;  state: Exp;  lines: +5 -1
+also setuid in the cgi forkslave
+----------------------------
+revision 1.235
+date: 2008-11-29 13:41:48 +0000;  author: leitner;  state: Exp;  lines: +6 -0
+disable socket_deferaccept on Linux (see http://blog.fefe.de/?ts=b7ce5cc0)
+----------------------------
+revision 1.234
+date: 2008-11-29 01:13:59 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+called deferaccept on wrong sockets :-)
+----------------------------
+revision 1.233
+date: 2008-11-26 17:16:25 +0000;  author: leitner;  state: Exp;  lines: +13 -13
+do not count proxy connections as connections
+----------------------------
+revision 1.232
+date: 2008-11-26 17:10:03 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+count ssh forwarded SSL connections as terminated
+----------------------------
+revision 1.231
+date: 2008-11-26 16:57:51 +0000;  author: leitner;  state: Exp;  lines: +7 -2
+POST requests were not counted as http connections at teardown
+----------------------------
+revision 1.230
+date: 2008-11-13 17:49:33 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+  add matchiprange (see comment at top of matchiprange.c)
+----------------------------
+revision 1.229
+date: 2008-09-23 16:21:43 +0000;  author: leitner;  state: Exp;  lines: +19 -11
+make CGI over HTTPS work
+----------------------------
+revision 1.228
+date: 2008-09-23 15:28:26 +0000;  author: leitner;  state: Exp;  lines: +3 -2
+initialize httpsport
+----------------------------
+revision 1.227
+date: 2008-09-23 15:22:40 +0000;  author: leitner;  state: Exp;  lines: +87 -9
+  add SSH forwarding to SSL support (see README.tls)
+----------------------------
+revision 1.226
+date: 2008-09-10 22:50:55 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+make smb multiplexing work
+----------------------------
+revision 1.225
+date: 2008-08-30 13:55:52 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+document -s and -S
+----------------------------
+revision 1.224
+date: 2008-04-12 17:40:11 +0000;  author: leitner;  state: Exp;  lines: +0 -1
+connstat.h was removed
+----------------------------
+revision 1.223
+date: 2008-04-08 05:34:07 +0000;  author: leitner;  state: Exp;  lines: +74 -26
+  add lame anti-DOS support (see README.antidos)
+I also changed the macro generated by genofsmacro.pl to use sizeof to
+prevent gcc warnings about out-of-bounds array accesses (that were never
+actually triggered because those accesses were optimized out by the
+compiler, but it still warned about them)
+----------------------------
+revision 1.222
+date: 2008-01-31 17:33:47 +0000;  author: leitner;  state: Exp;  lines: +4 -5
+make gatling compile under glibc again
+fix broken smb handle freeing
+----------------------------
+revision 1.221
+date: 2007-11-02 00:55:54 +0000;  author: leitner;  state: Exp;  lines: +3 -12
+  abstract out accept() deferment to libowfat (socket_deferaccept)
+----------------------------
+revision 1.220
+date: 2007-10-19 01:50:23 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+initial implementation of findfirst (beware: no findnext yet)
+----------------------------
+revision 1.219
+date: 2007-10-17 20:18:10 +0000;  author: leitner;  state: Exp;  lines: +27 -11
+various tweaks (signal large readx support in smb, set TCP_DEFER_ACCEPT
+on Linux)
+----------------------------
+revision 1.218
+date: 2007-10-17 16:21:59 +0000;  author: leitner;  state: Exp;  lines: +9 -789
+work on SMB support
+----------------------------
+revision 1.217
+date: 2007-10-12 13:31:23 +0000;  author: leitner;  state: Exp;  lines: +58 -3029
+split up gatling.c for maintainability
+----------------------------
+revision 1.216
+date: 2007-10-11 17:21:24 +0000;  author: leitner;  state: Exp;  lines: +2 -1
+fix "http://blog.fefe.de/?/" bug
+----------------------------
+revision 1.215
+date: 2007-10-09 00:52:23 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+get rid of <crypt.h>
+----------------------------
+revision 1.214
+date: 2007-10-09 00:49:51 +0000;  author: leitner;  state: Exp;  lines: +0 -1
+oops get rid of debug printf
+----------------------------
+revision 1.213
+date: 2007-10-09 00:49:07 +0000;  author: leitner;  state: Exp;  lines: +147 -19
+better hash function in acc
+add multi-ranges (only used by the Acrobat Reader plugin AFAIK)
+----------------------------
+revision 1.212
+date: 2007-07-14 01:21:45 +0000;  author: leitner;  state: Exp;  lines: +2 -20
+the POST fix broke the GET case
+----------------------------
+revision 1.211
+date: 2007-07-12 23:24:36 +0000;  author: leitner;  state: Exp;  lines: +192 -138
+fix POST
+----------------------------
+revision 1.210
+date: 2007-05-16 07:33:21 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+remove gcc warning
+----------------------------
+revision 1.209
+date: 2007-04-10 04:23:08 +0000;  author: leitner;  state: Exp;  lines: +3 -2
+  fix memory leak in proxy_connection() (Johannes Vetter)
+----------------------------
+revision 1.208
+date: 2007-01-31 21:00:41 +0000;  author: leitner;  state: Exp;  lines: +5 -5
+  use time_t in struct stat for the time values
+  support LLMNR in dnsd (no idea if it works, apparently only Vista
+    supports it)
+----------------------------
+revision 1.207
+date: 2007-01-10 14:11:05 +0000;  author: leitner;  state: Exp;  lines: +11 -1
+support /etc/mime.types style mime-type files
+----------------------------
+revision 1.206
+date: 2007-01-05 20:24:01 +0000;  author: leitner;  state: Exp;  lines: +3 -2
+update mime types
+----------------------------
+revision 1.205
+date: 2006-11-25 15:48:15 +0000;  author: leitner;  state: Exp;  lines: +173 -62
+make basic CGI work again (what a mess)
+----------------------------
+revision 1.204
+date: 2006-10-16 13:05:09 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+fix HEAD with ranges
+----------------------------
+revision 1.203
+date: 2006-10-16 12:56:20 +0000;  author: leitner;  state: Exp;  lines: +29 -26
+  for HEAD, suppress body of error messages (Andreas Krennmair)
+----------------------------
+revision 1.202
+date: 2006-09-11 11:09:08 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+also escape '#' in file names
+----------------------------
+revision 1.201
+date: 2006-09-03 21:29:28 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+switch on non-blocking mode (I thought after accept the new socket
+should inherit non-blocking mode, but it didn't on Linux)
+----------------------------
+revision 1.200
+date: 2006-09-02 16:02:48 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+add .nzb mime type
+----------------------------
+revision 1.199
+date: 2006-07-27 05:24:39 +0000;  author: leitner;  state: Exp;  lines: +66 -42
+some half-assed Windows port (broken)
+use setresuid/setresgid if available
+don't flood console with error messages but count them instead in bench
+----------------------------
+revision 1.198
+date: 2006-05-18 06:22:49 +0000;  author: leitner;  state: Exp;  lines: +1 -5
+remove superfluous io_nonblock calls
+----------------------------
+revision 1.197
+date: 2006-05-18 06:18:50 +0000;  author: leitner;  state: Exp;  lines: +41 -25
+adapt to libowfat socket_tcp* actually putting the sockets in
+non-blocking mode as documented all along
+----------------------------
+revision 1.196
+date: 2006-05-06 18:40:07 +0000;  author: leitner;  state: Exp;  lines: +190 -27
+lame windows http-only port for benchmarking (does not appear to actually work yet)
+some more mime types
+rss detection in mimemagic
+----------------------------
+revision 1.195
+date: 2006-02-08 02:06:16 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+  tell download accelerators that we support ranges
+----------------------------
+revision 1.194
+date: 2006-01-17 06:14:20 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+add ico mime type
+----------------------------
+revision 1.193
+date: 2005-12-19 13:42:43 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+fix .gz
+----------------------------
+revision 1.192
+date: 2005-12-06 19:30:19 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+skip more than one space after Host: header (work around broken MS
+proxy)
+----------------------------
+revision 1.191
+date: 2005-10-31 20:06:53 +0000;  author: leitner;  state: Exp;  lines: +0 -2
+remove debug data
+----------------------------
+revision 1.190
+date: 2005-10-31 20:04:53 +0000;  author: leitner;  state: Exp;  lines: +9 -0
+fix ssl with sigio
+----------------------------
+revision 1.189
+date: 2005-10-31 19:32:27 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+don't try to accept http connections if -H is given
+----------------------------
+revision 1.188
+date: 2005-10-31 19:30:04 +0000;  author: leitner;  state: Exp;  lines: +28 -13
+add -H option to disable HTTP
+----------------------------
+revision 1.187
+date: 2005-10-31 17:55:57 +0000;  author: leitner;  state: Exp;  lines: +16 -3
+  allow .htaccess_global
+----------------------------
+revision 1.186
+date: 2005-10-22 00:53:03 +0000;  author: leitner;  state: Exp;  lines: +8 -4
+  also log the GET arguments in the log for CGI requests
+----------------------------
+revision 1.185
+date: 2005-10-07 19:44:10 +0000;  author: leitner;  state: Exp;  lines: +3 -1
+less restrictive JPEG magic
+----------------------------
+revision 1.184
+date: 2005-10-07 19:36:20 +0000;  author: leitner;  state: Exp;  lines: +10 -5
+remove warnings, add quicktime and mp4
+----------------------------
+revision 1.183
+date: 2005-10-07 19:26:04 +0000;  author: leitner;  state: Exp;  lines: +10 -5
+make mime magic work if there is no extension
+----------------------------
+revision 1.182
+date: 2005-10-07 19:21:17 +0000;  author: leitner;  state: Exp;  lines: +157 -40
+better report mode for bench
+MIME magic support for gatling
+----------------------------
+revision 1.181
+date: 2005-10-06 22:46:36 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+remove huge from taia seconds when printing Date (mattered on 64-bit
+systems where time_t is 64 bits)
+add -U and -R to dl (set user-agent and referer)
+----------------------------
+revision 1.180
+date: 2005-09-23 10:58:07 +0000;  author: leitner;  state: Exp;  lines: +60 -7
+add Date header
+----------------------------
+revision 1.179
+date: 2005-09-02 20:52:06 +0000;  author: leitner;  state: Exp;  lines: +44 -3
+make bzip2 optional
+----------------------------
+revision 1.178
+date: 2005-08-25 08:10:31 +0000;  author: leitner;  state: Exp;  lines: +64 -64
+make gcc4 happier
+----------------------------
+revision 1.177
+date: 2005-08-25 08:08:00 +0000;  author: leitner;  state: Exp;  lines: +65 -65
+move cleanup function upwards to make gcc 4.0.2 prerelease (Debilian)
+happy
+----------------------------
+revision 1.176
+date: 2005-08-24 16:24:46 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+off-by-one
+----------------------------
+revision 1.175
+date: 2005-08-24 15:00:40 +0000;  author: leitner;  state: Exp;  lines: +7 -0
+fix getopt bsd restart issue
+----------------------------
+revision 1.174
+date: 2005-08-24 14:55:11 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+gcc 2 compat
+----------------------------
+revision 1.173
+date: 2005-08-24 14:45:21 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+getopt
+----------------------------
+revision 1.172
+date: 2005-08-05 15:10:34 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+Fix PASV response
+Fix dl MDTV to use full path
+----------------------------
+revision 1.171
+date: 2005-07-08 20:46:15 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+test commit
+----------------------------
+revision 1.170
+date: 2005-07-01 12:11:49 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+fix chroot and setuid in forkslave
+----------------------------
+revision 1.169
+date: 2005-07-01 12:04:52 +0000;  author: leitner;  state: Exp;  lines: +6 -2
+make cgi slave also setuid to -u
+----------------------------
+revision 1.168
+date: 2005-07-01 12:02:32 +0000;  author: leitner;  state: Exp;  lines: +20 -3
+make cgi fork slave also chdir to the chrootdir
+----------------------------
+revision 1.167
+date: 2005-07-01 11:44:12 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+Oops, typo
+----------------------------
+revision 1.166
+date: 2005-07-01 11:32:21 +0000;  author: leitner;  state: Exp;  lines: +105 -13
+add support for -C+x (consider all executable files with ELF or shebang
+CGI)
+----------------------------
+revision 1.165
+date: 2005-06-26 18:07:56 +0000;  author: leitner;  state: Exp;  lines: +183 -2
+/server-status
+----------------------------
+revision 1.164
+date: 2005-06-26 16:51:32 +0000;  author: leitner;  state: Exp;  lines: +15 -8
+improve ssl error handling
+----------------------------
+revision 1.163
+date: 2005-05-20 15:31:25 +0000;  author: leitner;  state: Exp;  lines: +1 -2
+evict unused variable
+----------------------------
+revision 1.162
+date: 2005-05-20 15:26:02 +0000;  author: leitner;  state: Exp;  lines: +11 -2
+another try
+----------------------------
+revision 1.161
+date: 2005-05-20 15:20:25 +0000;  author: leitner;  state: Exp;  lines: +3 -1
+try to fix IRIX bus error
+----------------------------
+revision 1.160
+date: 2005-05-20 14:44:57 +0000;  author: leitner;  state: Exp;  lines: +4 -0
+  IRIX compatibility (yuck!)
+----------------------------
+revision 1.159
+date: 2005-05-19 05:30:48 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+try to work around Fedora gcc
+----------------------------
+revision 1.158
+date: 2005-05-18 12:30:37 +0000;  author: leitner;  state: Exp;  lines: +37 -25
+  only fork cgi slave if -C is given on command line
+----------------------------
+revision 1.157
+date: 2005-05-17 12:51:36 +0000;  author: leitner;  state: Exp;  lines: +54 -3
+add temporary redirect option
+----------------------------
+revision 1.156
+date: 2005-05-12 12:39:38 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+support shockwave flash
+----------------------------
+revision 1.155
+date: 2005-05-12 12:34:00 +0000;  author: leitner;  state: Exp;  lines: +14 -2
+catch two can't happen errors in case they do happen (memory
+corruption?)
+----------------------------
+revision 1.154
+date: 2005-05-03 15:29:45 +0000;  author: leitner;  state: Exp;  lines: +35 -29
+allow redirect from / via index.html
+----------------------------
+revision 1.153
+date: 2005-04-23 15:51:48 +0000;  author: leitner;  state: Exp;  lines: +10 -10
+  gcc 4 unsigned char* <-> char* cleanups
+----------------------------
+revision 1.152
+date: 2005-04-14 13:03:03 +0000;  author: leitner;  state: Exp;  lines: +74 -21
+More conformant CGI environment passing
+----------------------------
+revision 1.151
+date: 2005-04-04 14:05:44 +0000;  author: leitner;  state: Exp;  lines: +11 -1
+fix pipelining more
+----------------------------
+revision 1.150
+date: 2005-04-04 12:11:43 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+Fix 304 range and content-length
+----------------------------
+revision 1.149
+date: 2005-04-04 10:52:10 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+fix pipelining bug
+----------------------------
+revision 1.148
+date: 2005-03-30 13:26:19 +0000;  author: leitner;  state: Exp;  lines: +4 -4
+leave feature #defines compiled in
+----------------------------
+revision 1.147
+date: 2005-03-30 13:25:40 +0000;  author: leitner;  state: Exp;  lines: +4 -102
+remove commented out code where the replacement turned out to work :)
+----------------------------
+revision 1.146
+date: 2005-03-28 09:30:18 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+.htm -> text/html
+----------------------------
+revision 1.145
+date: 2005-03-14 20:55:21 +0000;  author: leitner;  state: Exp;  lines: +0 -1
+oops, left debug code in
+----------------------------
+revision 1.144
+date: 2005-03-14 20:55:01 +0000;  author: leitner;  state: Exp;  lines: +10 -1
+io_fd was missing for CGI descriptor
+----------------------------
+revision 1.143
+date: 2005-03-07 17:04:59 +0000;  author: leitner;  state: Exp;  lines: +11 -0
+more error checking
+----------------------------
+revision 1.142
+date: 2005-03-07 16:57:11 +0000;  author: leitner;  state: Exp;  lines: +10 -6
+use buffer_putm
+----------------------------
+revision 1.141
+date: 2005-03-07 16:53:48 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+more error checking, for erdgeist
+----------------------------
+revision 1.140
+date: 2005-02-26 21:06:55 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+add mime types for rar, 7-zip
+----------------------------
+revision 1.139
+date: 2005-02-22 21:49:34 +0000;  author: leitner;  state: Exp;  lines: +24 -12
+SSL fixes
+----------------------------
+revision 1.138
+date: 2005-02-21 13:16:21 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+properly serve libstdc++.tar.gz (need libowfat cvs)
+----------------------------
+revision 1.137
+date: 2005-02-13 19:49:08 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+fix for freebsd busy-loop (hopefully)
+----------------------------
+revision 1.136
+date: 2005-02-01 19:42:40 +0000;  author: leitner;  state: Exp;  lines: +12 -4
+openbsd fixes
+----------------------------
+revision 1.135
+date: 2005-01-31 16:15:07 +0000;  author: leitner;  state: Exp;  lines: +137 -5
+fix http ranges
+----------------------------
+revision 1.134
+date: 2004-12-28 01:17:27 +0000;  author: leitner;  state: Exp;  lines: +4 -1
+build fix for #undef SUPPORT_PROXY case
+----------------------------
+revision 1.133
+date: 2004-12-21 22:15:38 +0000;  author: leitner;  state: Exp;  lines: +4 -3
+Oops, no .htaccess means access granted
+----------------------------
+revision 1.132
+date: 2004-12-17 20:47:50 +0000;  author: leitner;  state: Exp;  lines: +126 -11
+now with crude .htaccess support
+----------------------------
+revision 1.131
+date: 2004-12-03 23:05:32 +0000;  author: leitner;  state: Exp;  lines: +74 -13
+better SSL support
+----------------------------
+revision 1.130
+date: 2004-11-26 20:01:46 +0000;  author: leitner;  state: Exp;  lines: +1091 -792
+add TLS support (using OpenSSL; not quite working yet)
+----------------------------
+revision 1.129
+date: 2004-10-08 21:44:09 +0000;  author: leitner;  state: Exp;  lines: +15 -0
+  implement ABOR (ncftp was confused after aborting a connection)
+----------------------------
+revision 1.128
+date: 2004-09-20 11:00:00 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+make paths in ftp log start with / for list _and_ retr/stor
+----------------------------
+revision 1.127
+date: 2004-09-17 22:02:41 +0000;  author: leitner;  state: Exp;  lines: +1 -8
+LIST/NLST in ftp chdir'ed superfluously
+----------------------------
+revision 1.126
+date: 2004-08-26 16:27:35 +0000;  author: leitner;  state: Exp;  lines: +7 -0
+fix ftp globbing after cd somewhere
+----------------------------
+revision 1.125
+date: 2004-08-11 17:41:32 +0000;  author: leitner;  state: Exp;  lines: +12 -1
+actually chdir to the directory before exec'ing the CGI
+----------------------------
+revision 1.124
+date: 2004-07-29 18:40:53 +0000;  author: leitner;  state: Exp;  lines: +25 -3
+CGI POST Mode now works...
+I may have broken POST in CGI proxy mode.
+Will check tomorrow
+----------------------------
+revision 1.123
+date: 2004-07-29 14:37:09 +0000;  author: leitner;  state: Exp;  lines: +11 -3
+closer, but no cigar
+----------------------------
+revision 1.122
+date: 2004-07-28 13:24:13 +0000;  author: leitner;  state: Exp;  lines: +20 -5
+add -l option to work around broken ftp proxy servers
+----------------------------
+revision 1.121
+date: 2004-07-26 22:24:13 +0000;  author: leitner;  state: Exp;  lines: +9 -6
+work around non-susv3-compliant OSses like Darwin and FreeBSD :-(
+----------------------------
+revision 1.120
+date: 2004-07-26 16:53:21 +0000;  author: leitner;  state: Exp;  lines: +4 -1
+make FTP more removable
+----------------------------
+revision 1.119
+date: 2004-07-26 16:51:59 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+#include <limits.h> for PATH_MAX
+----------------------------
+revision 1.118
+date: 2004-07-23 13:59:44 +0000;  author: leitner;  state: Exp;  lines: +267 -78
+add experimental CGI support
+----------------------------
+revision 1.117
+date: 2004-07-19 17:08:30 +0000;  author: leitner;  state: Exp;  lines: +7 -2
+fix (1234 bytes) for uploads
+----------------------------
+revision 1.116
+date: 2004-07-01 16:25:54 +0000;  author: leitner;  state: Exp;  lines: +3 -1
+fix file descriptor leak for HEAD requests (big oops)
+----------------------------
+revision 1.115
+date: 2004-05-15 01:39:39 +0000;  author: leitner;  state: Exp;  lines: +591 -73
+add POST support
+----------------------------
+revision 1.114
+date: 2004-05-04 20:27:57 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+output size in log as 64-bit number
+----------------------------
+revision 1.113
+date: 2004-04-25 18:48:07 +0000;  author: leitner;  state: Exp;  lines: +35 -2
+add broken symlink style redirects
+----------------------------
+revision 1.112
+date: 2004-04-05 01:24:03 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+disable FORKSLAVE until we actually implement it
+----------------------------
+revision 1.111
+date: 2004-03-15 08:46:20 +0000;  author: leitner;  state: Exp;  lines: +24 -1
+CWD should return 250, not 200.  Broke curl.  (David Leadbeater)
+----------------------------
+revision 1.110
+date: 2004-03-04 21:04:52 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+add + to escaped characters
+----------------------------
+revision 1.109
+date: 2004-02-25 02:41:42 +0000;  author: leitner;  state: Exp;  lines: +17 -13
+fix FTP buddy connection leak
+----------------------------
+revision 1.108
+date: 2004-02-25 02:28:13 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+turn off debugging
+----------------------------
+revision 1.107
+date: 2004-02-25 02:26:26 +0000;  author: leitner;  state: Exp;  lines: +3 -35
+uh, that fixed the leak, but now the result was wrong
+----------------------------
+revision 1.106
+date: 2004-02-25 02:15:34 +0000;  author: leitner;  state: Exp;  lines: +19 -2
+fix HTTP pipelining fd leak
+----------------------------
+revision 1.105
+date: 2004-02-24 01:01:06 +0000;  author: leitner;  state: Exp;  lines: +46 -5
+update -h
+----------------------------
+revision 1.104
+date: 2004-02-24 00:19:31 +0000;  author: leitner;  state: Exp;  lines: +19 -2
+add optional more file descriptor leak debugging
+----------------------------
+revision 1.103
+date: 2004-02-23 23:53:40 +0000;  author: leitner;  state: Exp;  lines: +66 -28
+add fd debugging so I can debug descriptor leaks
+----------------------------
+revision 1.102
+date: 2004-02-21 11:34:20 +0000;  author: leitner;  state: Exp;  lines: +6 -2
+oops, I broken BSD support.
+----------------------------
+revision 1.101
+date: 2004-02-19 22:27:05 +0000;  author: leitner;  state: Exp;  lines: +265 -22
+add cgi proxy support
+----------------------------
+revision 1.100
+date: 2004-02-19 18:12:32 +0000;  author: sanjiyan;  state: Exp;  lines: +72 -8
+Make the FTP-support conditional...
+----------------------------
+revision 1.99
+date: 2004-02-19 01:26:18 +0000;  author: leitner;  state: Exp;  lines: +36 -9
+disable SMB
+----------------------------
+revision 1.98
+date: 2004-02-16 04:35:21 +0000;  author: leitner;  state: Exp;  lines: +4 -1
+fix ncftp upload issue
+----------------------------
+revision 1.97
+date: 2004-01-26 01:26:47 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+align size right in directory listings
+----------------------------
+revision 1.96
+date: 2004-01-23 19:24:45 +0000;  author: leitner;  state: Exp;  lines: +1 -2
+oops, left one debug printf in
+----------------------------
+revision 1.95
+date: 2004-01-23 17:37:47 +0000;  author: leitner;  state: Exp;  lines: +9 -2
+more sigio fixes
+----------------------------
+revision 1.94
+date: 2004-01-23 17:16:35 +0000;  author: leitner;  state: Exp;  lines: +6 -3
+more sigio
+----------------------------
+revision 1.93
+date: 2004-01-23 17:10:41 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+hadn't set peerip for active ftp connection
+----------------------------
+revision 1.92
+date: 2004-01-23 16:56:39 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+Linux 2.4 SIGIO fix for FTP
+----------------------------
+revision 1.91
+date: 2004-01-23 16:27:50 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+large file support
+----------------------------
+revision 1.90
+date: 2004-01-22 14:28:39 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+forgot to send two ints
+----------------------------
+revision 1.89
+date: 2004-01-16 22:07:15 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+oops, wrong -h
+----------------------------
+revision 1.88
+date: 2004-01-08 17:33:03 +0000;  author: leitner;  state: Exp;  lines: +4 -0
+add README.performance
+remove iconv warning on solaris
+----------------------------
+revision 1.87
+date: 2004-01-08 15:15:34 +0000;  author: leitner;  state: Exp;  lines: +5 -5
+remove warnings
+----------------------------
+revision 1.86
+date: 2004-01-08 15:13:35 +0000;  author: leitner;  state: Exp;  lines: +5 -4
+work around systems without tm_gmtoff
+----------------------------
+revision 1.85
+date: 2004-01-08 14:32:48 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+alloca
+----------------------------
+revision 1.84
+date: 2004-01-08 00:57:08 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+I think I got the timezone wrong in the MSDOS Date dialect
+----------------------------
+revision 1.83
+date: 2004-01-08 00:36:47 +0000;  author: leitner;  state: Exp;  lines: +267 -30
+first trapping of SMB support.  Samba negotiates with me, no session
+established yet.
+----------------------------
+revision 1.82
+date: 2004-01-07 18:35:58 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+wrong size
+----------------------------
+revision 1.81
+date: 2004-01-07 16:16:17 +0000;  author: leitner;  state: Exp;  lines: +25 -3
+add experimental prefetching support
+----------------------------
+revision 1.80
+date: 2004-01-01 03:47:53 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+NetBSD doesn't like it if I call connect again after a non-blocking connect
+----------------------------
+revision 1.79
+date: 2004-01-01 03:44:11 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+forgot socket() in itojun workaround mode
+----------------------------
+revision 1.78
+date: 2003-12-29 16:41:05 +0000;  author: leitner;  state: Exp;  lines: +0 -1
+-U was listed twice in -h
+----------------------------
+revision 1.77
+date: 2003-12-29 16:39:31 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+add text/plain
+----------------------------
+revision 1.76
+date: 2003-12-26 15:45:56 +0000;  author: leitner;  state: Exp;  lines: +17 -2
+mkdir support
+----------------------------
+revision 1.75
+date: 2003-12-16 21:25:29 +0000;  author: leitner;  state: Exp;  lines: +18 -13
+fix "nlist *.pdf" case (important for mget)
+----------------------------
+revision 1.74
+date: 2003-12-15 21:19:39 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+fix 404 errors (Matthias Pretzer)
+----------------------------
+revision 1.73
+date: 2003-12-05 19:57:00 +0000;  author: leitner;  state: Exp;  lines: +9 -38
+use new libowfat routines
+----------------------------
+revision 1.72
+date: 2003-12-05 17:38:27 +0000;  author: leitner;  state: Exp;  lines: +64 -20
+make sure non-relative paths work with list and get
+add primitive globbing (only last element in path name, and not recursive)
+----------------------------
+revision 1.71
+date: 2003-11-29 03:45:12 +0000;  author: leitner;  state: Exp;  lines: +88 -84
+more PORT fixes
+----------------------------
+revision 1.70
+date: 2003-11-28 18:35:36 +0000;  author: leitner;  state: Exp;  lines: +15 -6
+handle errors during PORT/EPRT establishment
+----------------------------
+revision 1.69
+date: 2003-11-28 18:06:35 +0000;  author: leitner;  state: Exp;  lines: +6 -0
+Guard against list/nlst without previously opened data connection
+----------------------------
+revision 1.68
+date: 2003-11-28 17:48:19 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+work around broken windoze ftp client
+----------------------------
+revision 1.67
+date: 2003-11-28 17:39:06 +0000;  author: leitner;  state: Exp;  lines: +6 -2
+fix off-by-one error in EPRT
+fix zero termination for generated FTP return codes (valgrind complained)
+----------------------------
+revision 1.66
+date: 2003-11-28 17:13:34 +0000;  author: leitner;  state: Exp;  lines: +29 -3
+fix ftp timeout (deadline was never advanced)
+fix ftp ls (without arguments sorted in wrong direction)
+----------------------------
+revision 1.65
+date: 2003-11-28 16:07:57 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+PATH_MAX -> 2048
+----------------------------
+revision 1.64
+date: 2003-11-28 16:06:58 +0000;  author: leitner;  state: Exp;  lines: +3 -3
+strlen -> str_len
+----------------------------
+revision 1.63
+date: 2003-11-27 14:31:03 +0000;  author: leitner;  state: Exp;  lines: +16 -13
+fix ftp permission checking
+----------------------------
+revision 1.62
+date: 2003-11-27 13:31:01 +0000;  author: leitner;  state: Exp;  lines: +7 -7
+fix ftp
+----------------------------
+revision 1.61
+date: 2003-11-27 00:21:44 +0000;  author: leitner;  state: Exp;  lines: +18 -7
+separate timeouts for FTP control connections (default: 10 minutes)
+----------------------------
+revision 1.60
+date: 2003-11-27 00:07:51 +0000;  author: leitner;  state: Exp;  lines: +178 -56
+implement FTP uploads
+add option -U to disallow them
+add option -a to chmod go+r uploads so they can be downloaded immediately by others
+----------------------------
+revision 1.59
+date: 2003-11-26 22:17:29 +0000;  author: leitner;  state: Exp;  lines: +67 -39
+add two READMEs
+support pipelining
+support CDUP for FTP
+----------------------------
+revision 1.58
+date: 2003-11-26 19:43:46 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+forgot to set passive ftp connections non-blocking
+----------------------------
+revision 1.57
+date: 2003-11-26 19:39:16 +0000;  author: leitner;  state: Exp;  lines: +8 -7
+another take on the ftp timeout problem
+----------------------------
+revision 1.56
+date: 2003-11-24 05:12:22 +0000;  author: leitner;  state: Exp;  lines: +59 -10
+rudimentary ftp logging
+----------------------------
+revision 1.55
+date: 2003-11-24 04:56:23 +0000;  author: leitner;  state: Exp;  lines: +24 -0
+also log Host: header
+----------------------------
+revision 1.54
+date: 2003-11-24 04:20:38 +0000;  author: leitner;  state: Exp;  lines: +972 -71
+provide primitive FTP support
+----------------------------
+revision 1.53
+date: 2003-11-22 17:24:22 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+remove duplicate leading slashes
+----------------------------
+revision 1.52
+date: 2003-11-07 16:05:24 +0000;  author: leitner;  state: Exp;  lines: +2 -1
+more cleanup
+document -n in gatling's -h output
+----------------------------
+revision 1.51
+date: 2003-11-06 21:30:28 +0000;  author: leitner;  state: Exp;  lines: +3 -0
+Solaris portability fixes
+bindbench now checks whether the socket() and bind() actually worked (duh)
+----------------------------
+revision 1.50
+date: 2003-11-02 02:40:34 +0000;  author: leitner;  state: Exp;  lines: +8 -0
+set TCP_NODELAY (no effect on Linux, solves high http latency over
+loopback on BSD)
+----------------------------
+revision 1.49
+date: 2003-11-01 19:24:56 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+add '%' to encoding list
+----------------------------
+revision 1.48
+date: 2003-11-01 18:08:17 +0000;  author: leitner;  state: Exp;  lines: +2 -4
+eRdgEiSt proposed code readability cleanups
+----------------------------
+revision 1.47
+date: 2003-11-01 17:58:34 +0000;  author: leitner;  state: Exp;  lines: +12 -3
+more range fixes
+more leaks plugged (Thomas Walpuski)
+----------------------------
+revision 1.46
+date: 2003-11-01 17:27:57 +0000;  author: leitner;  state: Exp;  lines: +4 -1
+partial GET should answer 206, not 200
+----------------------------
+revision 1.45
+date: 2003-11-01 16:12:05 +0000;  author: leitner;  state: Exp;  lines: +3 -0
+iron out more leaks
+----------------------------
+revision 1.44
+date: 2003-11-01 16:05:50 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+should not leak any more
+----------------------------
+revision 1.43
+date: 2003-11-01 15:07:49 +0000;  author: leitner;  state: Exp;  lines: +3 -4
+fix ranges and fd leak (Thomas Walpuski)
+----------------------------
+revision 1.42
+date: 2003-11-01 15:05:44 +0000;  author: leitner;  state: Exp;  lines: +30 -30
+more leakiness fixes
+----------------------------
+revision 1.41
+date: 2003-11-01 01:11:52 +0000;  author: leitner;  state: Exp;  lines: +0 -1
+get rid of SA_RESTART
+----------------------------
+revision 1.40
+date: 2003-11-01 01:02:10 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+get rid of sa_sigaction initialization
+----------------------------
+revision 1.39
+date: 2003-11-01 00:54:24 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+even less memory leaks!1!! ;)
+----------------------------
+revision 1.38
+date: 2003-11-01 00:07:29 +0000;  author: leitner;  state: Exp;  lines: +38 -13
+fix memory leaks in gatling
+add ioerr (to provoke errors in httpd)
+----------------------------
+revision 1.37
+date: 2003-10-31 10:58:34 +0000;  author: leitner;  state: Exp;  lines: +22 -0
+escape less in directory listings
+----------------------------
+revision 1.36
+date: 2003-10-25 00:17:33 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+add directory/symlink indicator
+----------------------------
+revision 1.35
+date: 2003-10-18 21:25:40 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+add \n after http error messages
+----------------------------
+revision 1.34
+date: 2003-10-18 19:19:07 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+close if-modified-since files
+----------------------------
+revision 1.33
+date: 2003-10-18 16:37:55 +0000;  author: leitner;  state: Exp;  lines: +3 -3
+Duh!  It's "Referer", not "Referrer" (as would be correct spelling)
+----------------------------
+revision 1.32
+date: 2003-10-18 16:15:02 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+work around bug in Linux that will return entries deleted minutes ago in
+getdents, but lstat will then fail on that entry.
+----------------------------
+revision 1.31
+date: 2003-10-18 16:12:12 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+oops, reversed -d and -D
+----------------------------
+revision 1.30
+date: 2003-10-18 02:03:59 +0000;  author: leitner;  state: Exp;  lines: +3 -3
+get the fchdir fd after we chroot+chdir.  Duh!
+----------------------------
+revision 1.29
+date: 2003-10-18 02:02:02 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+duh, forgot to chdir after chroot
+----------------------------
+revision 1.28
+date: 2003-10-18 01:24:29 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+fix uid switching
+----------------------------
+revision 1.27
+date: 2003-10-17 20:55:21 +0000;  author: leitner;  state: Exp;  lines: +63 -1
+add chroot+setuid support
+----------------------------
+revision 1.26
+date: 2003-10-10 16:41:35 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+don't try to allocate more than 20k file limit
+----------------------------
+revision 1.25
+date: 2003-10-10 15:28:08 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+typo
+----------------------------
+revision 1.24
+date: 2003-10-10 15:27:36 +0000;  author: leitner;  state: Exp;  lines: +11 -8
+extend itojun workarounds to NetBSD as well
+----------------------------
+revision 1.23
+date: 2003-10-10 14:40:12 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+only to limit stuff if we are root
+----------------------------
+revision 1.22
+date: 2003-10-10 13:04:44 +0000;  author: leitner;  state: Exp;  lines: +5 -1
+cvsignore the binaries
+add new file number limit handling to gatling and httpbench
+add prep (small readme/script to increase system limits)
+----------------------------
+revision 1.21
+date: 2003-10-09 12:37:34 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+add bindbench
+----------------------------
+revision 1.20
+date: 2003-10-07 20:11:21 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+really use str_len ;)
+----------------------------
+revision 1.19
+date: 2003-10-07 20:10:36 +0000;  author: leitner;  state: Exp;  lines: +10 -10
+use str_len instead of strlen
+----------------------------
+revision 1.18
+date: 2003-10-07 20:08:07 +0000;  author: leitner;  state: Exp;  lines: +114 -75
+add httpbench, make logging optional for gatling, and add small READMEs
+----------------------------
+revision 1.17
+date: 2003-10-07 11:37:41 +0000;  author: leitner;  state: Exp;  lines: +3 -3
+fix "Index of index.html" display
+----------------------------
+revision 1.16
+date: 2003-10-07 00:08:25 +0000;  author: leitner;  state: Exp;  lines: +84 -11
+add 13-on-the-Richter-scale scale bloat idiocy workaround bullshit for
+the OpenBSD crowd.  It's probably not even worth it.  What a crock.
+----------------------------
+revision 1.15
+date: 2003-10-06 17:41:15 +0000;  author: leitner;  state: Exp;  lines: +3 -1
+forgot to reset timeout when writing
+----------------------------
+revision 1.14
+date: 2003-10-02 23:32:46 +0000;  author: leitner;  state: Exp;  lines: +52 -3
+timeout handling
+----------------------------
+revision 1.13
+date: 2003-09-29 01:08:32 +0000;  author: leitner;  state: Exp;  lines: +2 -1
+remove constness warning
+----------------------------
+revision 1.12
+date: 2003-09-26 23:52:52 +0000;  author: leitner;  state: Exp;  lines: +4 -3
+fix mime type handling for "index.html"
+----------------------------
+revision 1.11
+date: 2003-09-26 21:13:49 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+fix sigpipe (typo)
+----------------------------
+revision 1.10
+date: 2003-09-26 20:06:08 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+change accept loggin
+----------------------------
+revision 1.9
+date: 2003-09-26 18:23:35 +0000;  author: leitner;  state: Exp;  lines: +39 -5
+add zlib support (only for directory listings, though)
+add clever hack to auto-detect diet
+----------------------------
+revision 1.8
+date: 2003-09-26 16:59:11 +0000;  author: leitner;  state: Exp;  lines: +103 -17
+keep-alive fixes
+----------------------------
+revision 1.7
+date: 2003-09-26 11:12:44 +0000;  author: leitner;  state: Exp;  lines: +1 -2
+oops
+----------------------------
+revision 1.6
+date: 2003-09-24 23:35:06 +0000;  author: leitner;  state: Exp;  lines: +14 -9
+slowly getting there
+----------------------------
+revision 1.5
+date: 2003-09-24 23:08:41 +0000;  author: leitner;  state: Exp;  lines: +132 -41
+fix header handling bug
+----------------------------
+revision 1.4
+date: 2003-09-19 15:39:51 +0000;  author: leitner;  state: Exp;  lines: +80 -17
+add if-modified-since, HEAD and HTTP ranges
+----------------------------
+revision 1.3
+date: 2003-09-19 13:08:31 +0000;  author: leitner;  state: Exp;  lines: +15 -1
+directory listing update
+----------------------------
+revision 1.2
+date: 2003-09-18 17:36:00 +0000;  author: leitner;  state: Exp;  lines: +2 -1
+make -h actually work
+----------------------------
+revision 1.1
+date: 2003-09-18 17:34:23 +0000;  author: leitner;  state: Exp;
+branches:  1.1.1;
+Initial revision
+----------------------------
+revision 1.1.1.1
+date: 2003-09-18 17:34:23 +0000;  author: leitner;  state: Exp;  lines: +0 -0
+initial import
+=============================================================================
+
+RCS file: /cvs/gatling/gatling.h,v
+Working file: gatling.h
+head: 1.25
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 25;	selected revisions: 25
+description:
+----------------------------
+revision 1.25
+date: 2012-04-10 23:07:01 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+  make use of new libowfat API to reduce syscalls
+----------------------------
+revision 1.24
+date: 2011-08-18 13:29:13 +0000;  author: leitner;  state: Exp;  lines: +84 -0
+several polarssl, scgi and fastcgi fixes
+----------------------------
+revision 1.23
+date: 2011-05-12 21:11:01 +0000;  author: leitner;  state: Exp;  lines: +22 -1
+add initial polarssl support (run "make ptlsgatling" to try it out)
+----------------------------
+revision 1.22
+date: 2010-07-21 01:09:14 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+add some easy punk-busting for HTTP, too
+----------------------------
+revision 1.21
+date: 2010-07-20 23:47:56 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+check for people connecting to the SSL port but not sending SSL traffic
+----------------------------
+revision 1.20
+date: 2010-04-04 18:32:09 +0000;  author: leitner;  state: Exp;  lines: +3 -2
+support fastcgi via unix domain sockets
+----------------------------
+revision 1.19
+date: 2010-01-11 00:09:38 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+add an -I option so you can tell gatling to try index.php, too, in
+addition to index.html
+----------------------------
+revision 1.18
+date: 2010-01-08 17:07:42 +0000;  author: leitner;  state: Exp;  lines: +8 -3
+SCGI support
+----------------------------
+revision 1.17
+date: 2010-01-05 14:37:47 +0000;  author: leitner;  state: Exp;  lines: +19 -0
+fix CGI POST
+add some state machine debugging code
+----------------------------
+revision 1.16
+date: 2010-01-04 21:04:35 +0000;  author: leitner;  state: Exp;  lines: +0 -2
+more freebsd
+----------------------------
+revision 1.15
+date: 2010-01-04 20:34:09 +0000;  author: leitner;  state: Exp;  lines: +4 -0
+für freebsd
+----------------------------
+revision 1.14
+date: 2009-10-09 19:50:13 +0000;  author: leitner;  state: Exp;  lines: +3 -3
+finally implement find_next in smb; now gatling can transfer directories
+larger than 100 files
+----------------------------
+revision 1.13
+date: 2009-08-17 01:55:38 +0000;  author: leitner;  state: Exp;  lines: +4 -0
+make gatling compile without SUPPORT_PROXY defined
+wrap alloca usage in tryalloca from libowfat
+----------------------------
+revision 1.12
+date: 2009-08-01 16:48:19 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+fix openbsd ftp and symlinks in dir listing
+----------------------------
+revision 1.11
+date: 2009-03-16 22:48:55 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+  fix a few CGI problems report by Andreas Stuehrk
+----------------------------
+revision 1.10
+date: 2008-09-23 16:23:01 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+add prototype
+----------------------------
+revision 1.9
+date: 2008-09-23 16:21:43 +0000;  author: leitner;  state: Exp;  lines: +5 -0
+make CGI over HTTPS work
+----------------------------
+revision 1.8
+date: 2008-09-23 15:22:40 +0000;  author: leitner;  state: Exp;  lines: +5 -1
+  add SSH forwarding to SSL support (see README.tls)
+----------------------------
+revision 1.7
+date: 2008-04-08 05:34:07 +0000;  author: leitner;  state: Exp;  lines: +14 -0
+  add lame anti-DOS support (see README.antidos)
+I also changed the macro generated by genofsmacro.pl to use sizeof to
+prevent gcc warnings about out-of-bounds array accesses (that were never
+actually triggered because those accesses were optimized out by the
+compiler, but it still warned about them)
+----------------------------
+revision 1.6
+date: 2008-02-26 02:39:50 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+some more range checks (must recheck if windows still works)
+----------------------------
+revision 1.5
+date: 2008-01-31 21:46:13 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+now type \\machine\pub\filename.txt works against gatling's SMB from
+Vista
+----------------------------
+revision 1.4
+date: 2008-01-31 17:33:47 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+make gatling compile under glibc again
+fix broken smb handle freeing
+----------------------------
+revision 1.3
+date: 2007-10-18 23:53:41 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+smb update (still broken)
+----------------------------
+revision 1.2
+date: 2007-10-17 16:21:59 +0000;  author: leitner;  state: Exp;  lines: +38 -2
+work on SMB support
+----------------------------
+revision 1.1
+date: 2007-10-12 13:31:23 +0000;  author: leitner;  state: Exp;
+split up gatling.c for maintainability
+=============================================================================
+
+RCS file: /cvs/gatling/gatling_features.h,v
+Working file: gatling_features.h
+head: 1.2
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 2;	selected revisions: 2
+description:
+----------------------------
+revision 1.2
+date: 2011-04-08 17:09:29 +0000;  author: leitner;  state: Exp;  lines: +5 -0
+add dir redirect for eRdgEiSt
+----------------------------
+revision 1.1
+date: 2008-01-31 17:33:47 +0000;  author: leitner;  state: Exp;
+make gatling compile under glibc again
+fix broken smb handle freeing
+=============================================================================
+
+RCS file: /cvs/gatling/genofsmacro.pl,v
+Working file: genofsmacro.pl
+head: 1.2
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 2;	selected revisions: 2
+description:
+----------------------------
+revision 1.2
+date: 2008-04-08 05:34:07 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+  add lame anti-DOS support (see README.antidos)
+I also changed the macro generated by genofsmacro.pl to use sizeof to
+prevent gcc warnings about out-of-bounds array accesses (that were never
+actually triggered because those accesses were optimized out by the
+compiler, but it still warned about them)
+----------------------------
+revision 1.1
+date: 2008-01-14 01:01:06 +0000;  author: leitner;  state: Exp;
+add SMB client support in dl
+support CreateFile in gatling
+=============================================================================
+
+RCS file: /cvs/gatling/getlinks.c,v
+Working file: getlinks.c
+head: 1.8
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 8;	selected revisions: 8
+description:
+----------------------------
+revision 1.8
+date: 2010-06-01 17:04:45 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+also understand comment close tags with more than two dashes
+----------------------------
+revision 1.7
+date: 2009-08-17 01:55:38 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+make gatling compile without SUPPORT_PROXY defined
+wrap alloca usage in tryalloca from libowfat
+----------------------------
+revision 1.6
+date: 2007-02-18 01:26:47 +0000;  author: leitner;  state: Exp;  lines: +11 -6
+for broken tags, don't abort but skip breakage
+----------------------------
+revision 1.5
+date: 2006-10-25 20:32:00 +0000;  author: leitner;  state: Exp;  lines: +7 -0
+support <base href="..."> in getlinks
+----------------------------
+revision 1.4
+date: 2005-11-05 19:35:58 +0000;  author: leitner;  state: Exp;  lines: +2 -1
+remove warnings
+----------------------------
+revision 1.3
+date: 2005-10-09 23:06:55 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+don't expect a tag directly after a comment
+----------------------------
+revision 1.2
+date: 2005-10-07 15:39:15 +0000;  author: leitner;  state: Exp;  lines: +0 -1
+add rellink
+----------------------------
+revision 1.1
+date: 2005-10-07 10:22:33 +0000;  author: leitner;  state: Exp;
+add getlinks
+=============================================================================
+
+RCS file: /cvs/gatling/getrusage.c,v
+Working file: getrusage.c
+head: 1.1
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 1;	selected revisions: 1
+description:
+----------------------------
+revision 1.1
+date: 2005-03-30 14:28:50 +0000;  author: leitner;  state: Exp;
+add getrusage (for memory usage statistics)
+=============================================================================
+
+RCS file: /cvs/gatling/hcat.c,v
+Working file: hcat.c
+head: 1.4
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 4;	selected revisions: 4
+description:
+----------------------------
+revision 1.4
+date: 2007-10-18 23:53:41 +0000;  author: leitner;  state: Exp;  lines: +9 -2
+smb update (still broken)
+----------------------------
+revision 1.3
+date: 2006-06-02 02:18:40 +0000;  author: leitner;  state: Exp;  lines: +10 -10
+oops, that was busted
+----------------------------
+revision 1.2
+date: 2006-06-02 02:00:01 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+oops, sort in other direction
+----------------------------
+revision 1.1
+date: 2006-06-02 01:56:16 +0000;  author: leitner;  state: Exp;
+add hcat
+=============================================================================
+
+RCS file: /cvs/gatling/http.c,v
+Working file: http.c
+head: 1.49
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 49;	selected revisions: 49
+description:
+----------------------------
+revision 1.49
+date: 2012-11-02 10:34:52 +0000;  author: leitner;  state: Exp;  lines: +5 -1
+make a copy of the Host header for sanitation
+----------------------------
+revision 1.48
+date: 2012-11-02 10:31:49 +0000;  author: leitner;  state: Exp;  lines: +26 -1
+  fix directory traversal in FTP (Jann Horn)
+----------------------------
+revision 1.47
+date: 2012-06-05 15:17:00 +0000;  author: leitner;  state: Exp;  lines: +44 -3
+directory listings are not utf-8; smart filename encoding
+----------------------------
+revision 1.46
+date: 2012-04-10 23:07:01 +0000;  author: leitner;  state: Exp;  lines: +2 -1
+  make use of new libowfat API to reduce syscalls
+----------------------------
+revision 1.45
+date: 2012-01-20 17:03:45 +0000;  author: leitner;  state: Exp;  lines: +50 -21
+some fixes
+----------------------------
+revision 1.44
+date: 2011-11-21 17:24:11 +0000;  author: leitner;  state: Exp;  lines: +6 -0
+  fix crash bug on I/O errors inside SSL connections
+----------------------------
+revision 1.43
+date: 2011-11-06 13:54:41 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+freed wrong pointer (Gerd Eist)
+----------------------------
+revision 1.42
+date: 2011-11-01 18:29:05 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+  remove spurious Content-Range header in 304 HTTP responses
+----------------------------
+revision 1.41
+date: 2011-08-19 00:50:49 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+polarssl compile fix
+----------------------------
+revision 1.40
+date: 2011-08-19 00:02:08 +0000;  author: leitner;  state: Exp;  lines: +13 -9
+ssl bug fix test
+----------------------------
+revision 1.39
+date: 2011-08-18 13:29:13 +0000;  author: leitner;  state: Exp;  lines: +72 -16
+several polarssl, scgi and fastcgi fixes
+----------------------------
+revision 1.38
+date: 2011-08-02 20:55:44 +0000;  author: leitner;  state: Exp;  lines: +0 -1
+fastcgi fix
+----------------------------
+revision 1.37
+date: 2011-06-26 21:24:36 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+work around error handling in polarssl
+----------------------------
+revision 1.36
+date: 2011-05-12 21:11:01 +0000;  author: leitner;  state: Exp;  lines: +6 -0
+add initial polarssl support (run "make ptlsgatling" to try it out)
+----------------------------
+revision 1.35
+date: 2011-04-08 17:09:29 +0000;  author: leitner;  state: Exp;  lines: +54 -0
+add dir redirect for eRdgEiSt
+----------------------------
+revision 1.34
+date: 2010-09-22 15:43:01 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+fix byte ranges again :-(
+----------------------------
+revision 1.33
+date: 2010-09-22 15:27:55 +0000;  author: leitner;  state: Exp;  lines: +4 -4
+fix off-by-ones in http byte ranges
+----------------------------
+revision 1.32
+date: 2010-08-24 01:51:31 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+prevent double-close of fd
+----------------------------
+revision 1.31
+date: 2010-07-21 01:09:14 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+add some easy punk-busting for HTTP, too
+----------------------------
+revision 1.30
+date: 2010-05-24 13:50:18 +0000;  author: leitner;  state: Exp;  lines: +2 -1
+--https_connections for ssh
+----------------------------
+revision 1.29
+date: 2010-04-04 18:32:09 +0000;  author: leitner;  state: Exp;  lines: +40 -13
+support fastcgi via unix domain sockets
+----------------------------
+revision 1.28
+date: 2010-03-23 04:46:35 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+fix documentation
+----------------------------
+revision 1.27
+date: 2010-01-20 20:15:35 +0000;  author: leitner;  state: Exp;  lines: +43 -7
+fix proxy/CGI via https
+set HTTPS=1 in CGI if accessed via https
+----------------------------
+revision 1.26
+date: 2010-01-13 20:29:38 +0000;  author: leitner;  state: Exp;  lines: +10 -1
+fix HTTP proxy
+----------------------------
+revision 1.25
+date: 2010-01-11 00:09:38 +0000;  author: leitner;  state: Exp;  lines: +40 -11
+add an -I option so you can tell gatling to try index.php, too, in
+addition to index.html
+----------------------------
+revision 1.24
+date: 2010-01-10 23:38:05 +0000;  author: leitner;  state: Exp;  lines: +2 -1
+one more fix, now the wordpress install.php script works
+----------------------------
+revision 1.23
+date: 2010-01-10 23:24:31 +0000;  author: leitner;  state: Exp;  lines: +7 -4
+fix stupid cgi vars bug for proxy mode
+----------------------------
+revision 1.22
+date: 2010-01-10 22:22:32 +0000;  author: leitner;  state: Exp;  lines: +2 -1
+more fixes
+----------------------------
+revision 1.21
+date: 2010-01-10 22:00:07 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+fix padded fastcgi
+----------------------------
+revision 1.20
+date: 2010-01-09 03:00:21 +0000;  author: leitner;  state: Exp;  lines: +4 -3
+fix PATH_INFO
+----------------------------
+revision 1.19
+date: 2010-01-09 02:29:56 +0000;  author: leitner;  state: Exp;  lines: +189 -78
+fastcgi!!
+----------------------------
+revision 1.18
+date: 2010-01-08 17:07:42 +0000;  author: leitner;  state: Exp;  lines: +230 -44
+SCGI support
+----------------------------
+revision 1.17
+date: 2010-01-05 14:37:47 +0000;  author: leitner;  state: Exp;  lines: +48 -11
+fix CGI POST
+add some state machine debugging code
+----------------------------
+revision 1.16
+date: 2010-01-04 21:02:13 +0000;  author: leitner;  state: Exp;  lines: +13 -1
+more bsd
+----------------------------
+revision 1.15
+date: 2009-11-20 15:20:35 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+  fix http ranges for Range: bytes=0-, would trigger 416 before
+    (Sebastian Köhler)
+----------------------------
+revision 1.14
+date: 2009-10-11 14:13:38 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+two small optimizations that probably not make a difference except in
+very specific benchmarks
+----------------------------
+revision 1.13
+date: 2009-08-17 01:55:38 +0000;  author: leitner;  state: Exp;  lines: +12 -14
+make gatling compile without SUPPORT_PROXY defined
+wrap alloca usage in tryalloca from libowfat
+----------------------------
+revision 1.12
+date: 2009-08-01 16:48:19 +0000;  author: leitner;  state: Exp;  lines: +20 -12
+fix openbsd ftp and symlinks in dir listing
+----------------------------
+revision 1.11
+date: 2009-07-05 12:26:33 +0000;  author: sanjiyan;  state: Exp;  lines: +10 -2
+Olaf:
+  Fixing the symlink to directory entry problem.
+  Fixing a minor bug in the MinGW environment using directory listings.
+----------------------------
+revision 1.10
+date: 2009-06-02 00:45:50 +0000;  author: leitner;  state: Exp;  lines: +3 -5
+various cosmetic fixes
+export :foo as .foo in FTP
+----------------------------
+revision 1.9
+date: 2009-06-01 16:42:22 +0000;  author: leitner;  state: Exp;  lines: +3 -1
+  setuid in the forkslave, too
+----------------------------
+revision 1.8
+date: 2009-03-16 22:48:55 +0000;  author: leitner;  state: Exp;  lines: +52 -15
+  fix a few CGI problems report by Andreas Stuehrk
+----------------------------
+revision 1.7
+date: 2008-09-23 16:21:43 +0000;  author: leitner;  state: Exp;  lines: +25 -1
+make CGI over HTTPS work
+----------------------------
+revision 1.6
+date: 2008-09-23 15:22:40 +0000;  author: leitner;  state: Exp;  lines: +54 -5
+  add SSH forwarding to SSL support (see README.tls)
+----------------------------
+revision 1.5
+date: 2008-08-31 12:31:31 +0000;  author: leitner;  state: Exp;  lines: +5 -4
+fix http auth in subdirs
+----------------------------
+revision 1.4
+date: 2008-01-31 17:33:47 +0000;  author: leitner;  state: Exp;  lines: +14 -0
+make gatling compile under glibc again
+fix broken smb handle freeing
+----------------------------
+revision 1.3
+date: 2007-10-17 20:22:51 +0000;  author: leitner;  state: Exp;  lines: +3 -0
+bsd compat
+----------------------------
+revision 1.2
+date: 2007-10-17 16:21:59 +0000;  author: leitner;  state: Exp;  lines: +432 -0
+work on SMB support
+----------------------------
+revision 1.1
+date: 2007-10-12 13:31:23 +0000;  author: leitner;  state: Exp;
+split up gatling.c for maintainability
+=============================================================================
+
+RCS file: /cvs/gatling/httpbench.c,v
+Working file: httpbench.c
+head: 1.21
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 21;	selected revisions: 21
+description:
+----------------------------
+revision 1.21
+date: 2006-05-18 06:18:50 +0000;  author: leitner;  state: Exp;  lines: +3 -0
+adapt to libowfat socket_tcp* actually putting the sockets in
+non-blocking mode as documented all along
+----------------------------
+revision 1.20
+date: 2004-01-08 15:31:27 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+remove more warnings
+----------------------------
+revision 1.19
+date: 2003-11-07 00:28:57 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+flush on error
+----------------------------
+revision 1.18
+date: 2003-11-06 21:30:28 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+Solaris portability fixes
+bindbench now checks whether the socket() and bind() actually worked (duh)
+----------------------------
+revision 1.17
+date: 2003-11-01 00:07:29 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+fix memory leaks in gatling
+add ioerr (to provoke errors in httpd)
+----------------------------
+revision 1.16
+date: 2003-10-21 18:13:27 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+  compiler warnings removed (Julien Touche)
+----------------------------
+revision 1.15
+date: 2003-10-10 17:31:05 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+strlen -> str_len
+----------------------------
+revision 1.14
+date: 2003-10-10 16:41:35 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+don't try to allocate more than 20k file limit
+----------------------------
+revision 1.13
+date: 2003-10-10 16:22:26 +0000;  author: leitner;  state: Exp;  lines: +4 -4
+oops, one zero too much
+----------------------------
+revision 1.12
+date: 2003-10-10 14:40:12 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+only to limit stuff if we are root
+----------------------------
+revision 1.11
+date: 2003-10-10 13:04:44 +0000;  author: leitner;  state: Exp;  lines: +5 -1
+cvsignore the binaries
+add new file number limit handling to gatling and httpbench
+add prep (small readme/script to increase system limits)
+----------------------------
+revision 1.10
+date: 2003-10-10 01:21:31 +0000;  author: leitner;  state: Exp;  lines: +5 -1
+see if socket() fails
+----------------------------
+revision 1.9
+date: 2003-10-09 21:49:53 +0000;  author: leitner;  state: Exp;  lines: +8 -4
+fix -d
+----------------------------
+revision 1.8
+date: 2003-10-09 21:41:57 +0000;  author: leitner;  state: Exp;  lines: +23 -2
+disable resource limit in forkbench
+add option in httpbench to not let OS choose the local port number
+----------------------------
+revision 1.7
+date: 2003-10-09 01:18:06 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+#include <textcode.h>
+----------------------------
+revision 1.6
+date: 2003-10-09 01:16:59 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+add small download program for testing
+----------------------------
+revision 1.5
+date: 2003-10-08 22:44:34 +0000;  author: leitner;  state: Exp;  lines: +34 -4
+add throughput measurement mode to httpbench (-c 1)
+----------------------------
+revision 1.4
+date: 2003-10-07 23:09:23 +0000;  author: leitner;  state: Exp;  lines: +2 -1
+fix "duh" error in url parsing
+----------------------------
+revision 1.3
+date: 2003-10-07 22:58:31 +0000;  author: leitner;  state: Exp;  lines: +8 -6
+fix url parser
+----------------------------
+revision 1.2
+date: 2003-10-07 20:12:28 +0000;  author: leitner;  state: Exp;  lines: +3 -3
+get rid of strlen and strcpy
+----------------------------
+revision 1.1
+date: 2003-10-07 20:08:07 +0000;  author: leitner;  state: Exp;
+add httpbench, make logging optional for gatling, and add small READMEs
+=============================================================================
+
+RCS file: /cvs/gatling/ioerr.c,v
+Working file: ioerr.c
+head: 1.4
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 4;	selected revisions: 4
+description:
+----------------------------
+revision 1.4
+date: 2006-05-18 06:18:50 +0000;  author: leitner;  state: Exp;  lines: +3 -0
+adapt to libowfat socket_tcp* actually putting the sockets in
+non-blocking mode as documented all along
+----------------------------
+revision 1.3
+date: 2004-01-08 15:31:27 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+remove more warnings
+----------------------------
+revision 1.2
+date: 2003-11-06 21:30:28 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+Solaris portability fixes
+bindbench now checks whether the socket() and bind() actually worked (duh)
+----------------------------
+revision 1.1
+date: 2003-11-01 00:07:29 +0000;  author: leitner;  state: Exp;
+fix memory leaks in gatling
+add ioerr (to provoke errors in httpd)
+=============================================================================
+
+RCS file: /cvs/gatling/manymapbench.c,v
+Working file: manymapbench.c
+head: 1.2
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 2;	selected revisions: 2
+description:
+----------------------------
+revision 1.2
+date: 2003-10-23 21:12:56 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+add README for manymapbench
+add volatile to make sure reading the byte is not optimized away
+----------------------------
+revision 1.1
+date: 2003-10-23 20:58:31 +0000;  author: leitner;  state: Exp;
+add another mmap test that opens many small files
+=============================================================================
+
+RCS file: /cvs/gatling/matchiprange.c,v
+Working file: matchiprange.c
+head: 1.4
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 4;	selected revisions: 4
+description:
+----------------------------
+revision 1.4
+date: 2010-01-19 03:03:19 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+bsd
+----------------------------
+revision 1.3
+date: 2009-06-02 00:45:50 +0000;  author: leitner;  state: Exp;  lines: +0 -1
+various cosmetic fixes
+export :foo as .foo in FTP
+----------------------------
+revision 1.2
+date: 2008-11-26 16:57:51 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+POST requests were not counted as http connections at teardown
+----------------------------
+revision 1.1
+date: 2008-11-13 17:49:33 +0000;  author: leitner;  state: Exp;
+  add matchiprange (see comment at top of matchiprange.c)
+=============================================================================
+
+RCS file: /cvs/gatling/mime.c,v
+Working file: mime.c
+head: 1.12
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 12;	selected revisions: 12
+description:
+----------------------------
+revision 1.12
+date: 2012-09-12 00:39:05 +0000;  author: leitner;  state: Exp;  lines: +3 -2
+add opus support, change application/ogg to audio/ogg
+----------------------------
+revision 1.11
+date: 2010-09-22 14:19:58 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+webm
+----------------------------
+revision 1.10
+date: 2010-07-20 14:51:31 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+add svg content sniffing
+----------------------------
+revision 1.9
+date: 2010-07-20 14:50:18 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+add svg mime type
+----------------------------
+revision 1.8
+date: 2009-10-09 00:12:03 +0000;  author: leitner;  state: Exp;  lines: +10 -4
+  look for theora in .ogg files and say they are video/ogg (requires
+    SUPPORT_MIMEMAGIC)
+----------------------------
+revision 1.7
+date: 2009-09-12 22:53:58 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+turn off ogg sniffing because it can't tell audio from video
+----------------------------
+revision 1.6
+date: 2009-08-22 16:28:50 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+add video/ogg for theora
+----------------------------
+revision 1.5
+date: 2009-06-02 00:45:50 +0000;  author: leitner;  state: Exp;  lines: +0 -4
+various cosmetic fixes
+export :foo as .foo in FTP
+----------------------------
+revision 1.4
+date: 2009-03-16 22:48:55 +0000;  author: leitner;  state: Exp;  lines: +4 -0
+  fix a few CGI problems report by Andreas Stuehrk
+----------------------------
+revision 1.3
+date: 2008-01-31 17:33:47 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+make gatling compile under glibc again
+fix broken smb handle freeing
+----------------------------
+revision 1.2
+date: 2007-10-12 13:31:23 +0000;  author: leitner;  state: Exp;  lines: +123 -2
+split up gatling.c for maintainability
+----------------------------
+revision 1.1
+date: 2007-01-10 14:11:05 +0000;  author: leitner;  state: Exp;
+support /etc/mime.types style mime-type files
+=============================================================================
+
+RCS file: /cvs/gatling/mktestdata.c,v
+Working file: mktestdata.c
+head: 1.3
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 3;	selected revisions: 3
+description:
+----------------------------
+revision 1.3
+date: 2003-11-06 21:30:28 +0000;  author: leitner;  state: Exp;  lines: +4 -4
+Solaris portability fixes
+bindbench now checks whether the socket() and bind() actually worked (duh)
+----------------------------
+revision 1.2
+date: 2003-10-23 21:30:20 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+mkdir needs <sys/stat.h> on FreeBSD
+----------------------------
+revision 1.1
+date: 2003-10-23 20:58:31 +0000;  author: leitner;  state: Exp;
+add another mmap test that opens many small files
+=============================================================================
+
+RCS file: /cvs/gatling/mmapbench.c,v
+Working file: mmapbench.c
+head: 1.5
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 5;	selected revisions: 5
+description:
+----------------------------
+revision 1.5
+date: 2003-10-24 23:14:20 +0000;  author: leitner;  state: Exp;  lines: +12 -2
+Work around OpenBSD's non-unified buffer cache
+----------------------------
+revision 1.4
+date: 2003-10-10 16:22:26 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+oops, one zero too much
+----------------------------
+revision 1.3
+date: 2003-10-09 22:03:41 +0000;  author: leitner;  state: Exp;  lines: +26 -0
+switch mmapbench from usec to CPU cycles on i386
+----------------------------
+revision 1.2
+date: 2003-10-09 21:26:29 +0000;  author: leitner;  state: Exp;  lines: +22 -7
+add forkbench
+----------------------------
+revision 1.1
+date: 2003-10-09 17:29:39 +0000;  author: leitner;  state: Exp;
+add mmapbench
+=============================================================================
+
+RCS file: /cvs/gatling/prep,v
+Working file: prep
+head: 1.10
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 10;	selected revisions: 10
+description:
+----------------------------
+revision 1.10
+date: 2010-08-25 10:27:55 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+fin timeout = 10
+----------------------------
+revision 1.9
+date: 2010-08-24 23:49:03 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+enable TIME_WAIT reuse
+----------------------------
+revision 1.8
+date: 2005-08-24 16:31:35 +0000;  author: leitner;  state: Exp;  lines: +3 -0
+new freebsd tunes
+----------------------------
+revision 1.7
+date: 2003-11-14 20:34:28 +0000;  author: leitner;  state: Exp;  lines: +4 -0
+extend port range
+----------------------------
+revision 1.6
+date: 2003-11-14 15:12:17 +0000;  author: leitner;  state: Exp;  lines: +3 -0
+also set ipv6 to sane mode
+----------------------------
+revision 1.5
+date: 2003-11-08 02:25:57 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+AIX typo
+----------------------------
+revision 1.4
+date: 2003-11-06 21:30:28 +0000;  author: leitner;  state: Exp;  lines: +5 -0
+Solaris portability fixes
+bindbench now checks whether the socket() and bind() actually worked (duh)
+----------------------------
+revision 1.3
+date: 2003-10-23 22:12:54 +0000;  author: leitner;  state: Exp;  lines: +19 -9
+make prep into a shell script
+----------------------------
+revision 1.2
+date: 2003-10-18 01:24:29 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+fix uid switching
+----------------------------
+revision 1.1
+date: 2003-10-10 13:04:44 +0000;  author: leitner;  state: Exp;
+cvsignore the binaries
+add new file number limit handling to gatling and httpbench
+add prep (small readme/script to increase system limits)
+=============================================================================
+
+RCS file: /cvs/gatling/pssl.c,v
+Working file: pssl.c
+head: 1.4
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 4;	selected revisions: 4
+description:
+----------------------------
+revision 1.4
+date: 2012-01-13 03:24:45 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+polarssl compile update
+bench usage update
+----------------------------
+revision 1.3
+date: 2011-08-19 00:50:49 +0000;  author: leitner;  state: Exp;  lines: +6 -2
+polarssl compile fix
+----------------------------
+revision 1.2
+date: 2011-06-26 21:24:36 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+work around error handling in polarssl
+----------------------------
+revision 1.1
+date: 2011-05-12 21:11:01 +0000;  author: leitner;  state: Exp;
+add initial polarssl support (run "make ptlsgatling" to try it out)
+=============================================================================
+
+RCS file: /cvs/gatling/pthreadbench.c,v
+Working file: pthreadbench.c
+head: 1.3
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 3;	selected revisions: 3
+description:
+----------------------------
+revision 1.3
+date: 2003-11-06 21:30:28 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+Solaris portability fixes
+bindbench now checks whether the socket() and bind() actually worked (duh)
+----------------------------
+revision 1.2
+date: 2003-10-21 18:13:27 +0000;  author: leitner;  state: Exp;  lines: +3 -3
+  compiler warnings removed (Julien Touche)
+----------------------------
+revision 1.1
+date: 2003-10-11 15:00:30 +0000;  author: leitner;  state: Exp;
+add pthreadbench
+=============================================================================
+
+RCS file: /cvs/gatling/readfrag.c,v
+Working file: readfrag.c
+head: 1.2
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 2;	selected revisions: 2
+description:
+----------------------------
+revision 1.2
+date: 2006-12-01 21:52:29 +0000;  author: leitner;  state: Exp;  lines: +42 -8
+use radix sort instead of qsort in readfrag
+----------------------------
+revision 1.1
+date: 2004-01-07 19:43:43 +0000;  author: leitner;  state: Exp;
+mention fragmentation in README.prefetch, add readfrag
+=============================================================================
+
+RCS file: /cvs/gatling/referrer.c,v
+Working file: referrer.c
+head: 1.4
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 4;	selected revisions: 4
+description:
+----------------------------
+revision 1.4
+date: 2009-06-02 00:45:50 +0000;  author: leitner;  state: Exp;  lines: +3 -3
+various cosmetic fixes
+export :foo as .foo in FTP
+----------------------------
+revision 1.3
+date: 2008-05-12 04:32:52 +0000;  author: leitner;  state: Exp;  lines: +6 -2
+add hitprofile (referrer including [no_referrer])
+----------------------------
+revision 1.2
+date: 2008-04-29 05:48:09 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+  sort the other way around in referer
+  dl in http mode now supports cookies and sets the referer
+----------------------------
+revision 1.1
+date: 2006-06-04 00:43:08 +0000;  author: leitner;  state: Exp;
+  add referrer (extract nice external referrer statistics from acc
+    output, before or after tai64nlocal)
+=============================================================================
+
+RCS file: /cvs/gatling/rellink.c,v
+Working file: rellink.c
+head: 1.5
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 5;	selected revisions: 5
+description:
+----------------------------
+revision 1.5
+date: 2011-06-27 22:56:57 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+fix off-by-one in acc, and silence compiler warning in rellink.c
+----------------------------
+revision 1.4
+date: 2009-08-17 01:55:38 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+make gatling compile without SUPPORT_PROXY defined
+wrap alloca usage in tryalloca from libowfat
+----------------------------
+revision 1.3
+date: 2009-06-02 00:45:50 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+various cosmetic fixes
+export :foo as .foo in FTP
+----------------------------
+revision 1.2
+date: 2005-10-07 16:05:54 +0000;  author: leitner;  state: Exp;  lines: +21 -8
+overwrite original file now
+----------------------------
+revision 1.1
+date: 2005-10-07 15:39:15 +0000;  author: leitner;  state: Exp;
+add rellink
+=============================================================================
+
+RCS file: /cvs/gatling/run-bench,v
+Working file: run-bench
+head: 1.4
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 4;	selected revisions: 4
+description:
+----------------------------
+revision 1.4
+date: 2003-11-14 15:20:57 +0000;  author: leitner;  state: Exp;  lines: +3 -0
+also run forksbench
+----------------------------
+revision 1.3
+date: 2003-10-10 00:12:03 +0000;  author: leitner;  state: Exp;  lines: +25 -6
+oops, linked in wrong object on BSD
+----------------------------
+revision 1.2
+date: 2003-10-09 23:59:12 +0000;  author: leitner;  state: Exp;  lines: +3 -1
+use sigwait, not sigwaitinfo
+----------------------------
+revision 1.1
+date: 2003-10-09 22:56:40 +0000;  author: leitner;  state: Exp;
+add run-bench, fix forkbench help text
+=============================================================================
+
+RCS file: /cvs/gatling/run-gatling,v
+Working file: run-gatling
+head: 1.1
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 1;	selected revisions: 1
+description:
+----------------------------
+revision 1.1
+date: 2003-10-09 23:59:12 +0000;  author: leitner;  state: Exp;
+use sigwait, not sigwaitinfo
+=============================================================================
+
+RCS file: /cvs/gatling/run-valgrind,v
+Working file: run-valgrind
+head: 1.3
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 3;	selected revisions: 3
+description:
+----------------------------
+revision 1.3
+date: 2010-08-20 03:36:42 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+more valgrind cleanup
+----------------------------
+revision 1.2
+date: 2003-11-01 00:48:34 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+forgot to say what I want valgrind to run
+----------------------------
+revision 1.1
+date: 2003-11-01 00:02:52 +0000;  author: leitner;  state: Exp;
+add small script to run valgrind on gatling
+=============================================================================
+
+RCS file: /cvs/gatling/smb.c,v
+Working file: smb.c
+head: 1.35
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 35;	selected revisions: 35
+description:
+----------------------------
+revision 1.35
+date: 2012-06-13 17:22:39 +0000;  author: leitner;  state: Exp;  lines: +33 -14
+inconsequential debugging stuff :)
+----------------------------
+revision 1.34
+date: 2011-12-20 02:40:51 +0000;  author: leitner;  state: Exp;  lines: +35 -15
+smb fixes
+----------------------------
+revision 1.33
+date: 2011-12-20 01:36:24 +0000;  author: leitner;  state: Exp;  lines: +6 -0
+fix segfault in new globbing code
+----------------------------
+revision 1.32
+date: 2011-12-11 02:59:54 +0000;  author: leitner;  state: Exp;  lines: +56 -8
+support '<.SID' in findfirst
+----------------------------
+revision 1.31
+date: 2011-08-18 13:29:13 +0000;  author: leitner;  state: Exp;  lines: +3 -4
+several polarssl, scgi and fastcgi fixes
+----------------------------
+revision 1.30
+date: 2010-08-18 22:45:29 +0000;  author: leitner;  state: Exp;  lines: +53 -8
+add (really crappy) -L limit-to-lan option that actually limits to rfc1918
+support smb 0x23 query information2 that newer libsmbclient uses
+----------------------------
+revision 1.29
+date: 2010-06-14 17:45:08 +0000;  author: leitner;  state: Exp;  lines: +3 -1
+return ENOSUPPORT for all Trans SMB calls, not just ioctl
+----------------------------
+revision 1.28
+date: 2010-04-20 05:26:20 +0000;  author: leitner;  state: Exp;  lines: +23 -9
+fix find_first/find_next issue that broke win7 on long directories
+return ENOENT instead of EACCES for /wkssrv (does not help)
+implement close2 (does not help, not sure if implemented right)
+----------------------------
+revision 1.27
+date: 2010-04-05 04:48:41 +0000;  author: leitner;  state: Exp;  lines: +36 -12
+  win7 does some new strange ioctl call when copying files; return error
+    instead of dropping connection
+----------------------------
+revision 1.26
+date: 2009-10-09 19:51:58 +0000;  author: leitner;  state: Exp;  lines: +10 -4
+remove debug info
+----------------------------
+revision 1.25
+date: 2009-10-09 19:50:13 +0000;  author: leitner;  state: Exp;  lines: +121 -22
+finally implement find_next in smb; now gatling can transfer directories
+larger than 100 files
+----------------------------
+revision 1.24
+date: 2009-08-17 01:55:38 +0000;  author: leitner;  state: Exp;  lines: +2 -0
+make gatling compile without SUPPORT_PROXY defined
+wrap alloca usage in tryalloca from libowfat
+----------------------------
+revision 1.23
+date: 2009-06-02 00:45:50 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+various cosmetic fixes
+export :foo as .foo in FTP
+----------------------------
+revision 1.22
+date: 2008-12-26 01:21:44 +0000;  author: leitner;  state: Exp;  lines: +8 -3
+return file not found when no matches are found
+----------------------------
+revision 1.21
+date: 2008-09-10 22:50:55 +0000;  author: leitner;  state: Exp;  lines: +2 -2
+make smb multiplexing work
+----------------------------
+revision 1.20
+date: 2008-05-13 05:28:36 +0000;  author: leitner;  state: Exp;  lines: +4 -1
+copy with someone trying to read behind the end of the file
+----------------------------
+revision 1.19
+date: 2008-05-06 00:31:02 +0000;  author: leitner;  state: Exp;  lines: +32 -2
+more vista compat
+add ipv4 fallback to dl
+----------------------------
+revision 1.18
+date: 2008-04-29 23:29:06 +0000;  author: leitner;  state: Exp;  lines: +7 -0
+add one more call to make Vista happy
+----------------------------
+revision 1.17
+date: 2008-04-08 05:34:07 +0000;  author: leitner;  state: Exp;  lines: +81 -80
+  add lame anti-DOS support (see README.antidos)
+I also changed the macro generated by genofsmacro.pl to use sizeof to
+prevent gcc warnings about out-of-bounds array accesses (that were never
+actually triggered because those accesses were optimized out by the
+compiler, but it still warned about them)
+----------------------------
+revision 1.16
+date: 2008-02-26 02:39:50 +0000;  author: leitner;  state: Exp;  lines: +22 -14
+some more range checks (must recheck if windows still works)
+----------------------------
+revision 1.15
+date: 2008-02-26 01:16:42 +0000;  author: leitner;  state: Exp;  lines: +58 -69
+it has to be static const char even inside function scope or gcc won't
+calculate OFS16 at run time
+----------------------------
+revision 1.14
+date: 2008-02-26 00:53:21 +0000;  author: leitner;  state: Exp;  lines: +83 -44
+fix dl -O- for smb
+change old SMB code to not keep state in static char arrays so we can
+  later switch to multiple threads
+----------------------------
+revision 1.13
+date: 2008-02-09 19:59:21 +0000;  author: leitner;  state: Exp;  lines: +1 -1
+more xp compat
+----------------------------
+revision 1.12
+date: 2008-02-07 22:06:17 +0000;  author: leitner;  state: Exp;  lines: +27 -8
+improve SMB support so I can actually open a file from explorer in XP
+----------------------------
+revision 1.11
+date: 2008-01-31 21:46:13 +0000;  author: leitner;  state: Exp;  lines: +21 -10
+now type \\machine\pub\filename.txt works against gatling's SMB from
+Vista
+----------------------------
+revision 1.10
+date: 2008-01-31 20:42:52 +0000;  author: leitner;  state: Exp;  lines: +4 -3
+more attempts at windoze compat
+----------------------------
+revision 1.9
+date: 2008-01-31 17:33:47 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+make gatling compile under glibc again
+fix broken smb handle freeing
+----------------------------
+revision 1.8
+date: 2008-01-14 01:01:06 +0000;  author: leitner;  state: Exp;  lines: +141 -36
+add SMB client support in dl
+support CreateFile in gatling
+----------------------------
+revision 1.7
+date: 2007-10-24 11:28:41 +0000;  author: leitner;  state: Exp;  lines: +2 -1
+un-break andx
+----------------------------
+revision 1.6
+date: 2007-10-23 15:36:02 +0000;  author: leitner;  state: Exp;  lines: +101 -14
+still broken
+----------------------------
+revision 1.5
+date: 2007-10-19 01:50:23 +0000;  author: leitner;  state: Exp;  lines: +127 -0
+initial implementation of findfirst (beware: no findnext yet)
+----------------------------
+revision 1.4
+date: 2007-10-18 23:53:41 +0000;  author: leitner;  state: Exp;  lines: +153 -55
+smb update (still broken)
+----------------------------
+revision 1.3
+date: 2007-10-17 20:23:41 +0000;  author: leitner;  state: Exp;  lines: +3 -0
+bsd compat
+----------------------------
+revision 1.2
+date: 2007-10-17 20:18:10 +0000;  author: leitner;  state: Exp;  lines: +4 -3
+various tweaks (signal large readx support in smb, set TCP_DEFER_ACCEPT
+on Linux)
+----------------------------
+revision 1.1
+date: 2007-10-17 16:21:59 +0000;  author: leitner;  state: Exp;
+work on SMB support
+=============================================================================
+
+RCS file: /cvs/gatling/ssl.c,v
+Working file: ssl.c
+head: 1.2
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 2;	selected revisions: 2
+description:
+----------------------------
+revision 1.2
+date: 2008-11-13 17:49:33 +0000;  author: leitner;  state: Exp;  lines: +22 -4
+  add matchiprange (see comment at top of matchiprange.c)
+----------------------------
+revision 1.1
+date: 2004-12-04 00:00:10 +0000;  author: leitner;  state: Exp;
+Oops, forgot to check in ssl.c
+=============================================================================
+
+RCS file: /cvs/gatling/torrent.c,v
+Working file: torrent.c
+head: 1.2
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 2;	selected revisions: 2
+description:
+----------------------------
+revision 1.2
+date: 2009-08-17 01:55:38 +0000;  author: leitner;  state: Exp;  lines: +1 -0
+make gatling compile without SUPPORT_PROXY defined
+wrap alloca usage in tryalloca from libowfat
+----------------------------
+revision 1.1
+date: 2006-12-01 21:20:06 +0000;  author: leitner;  state: Exp;
+bittorrent fragments
+=============================================================================
+
+RCS file: /cvs/gatling/tryalloca.c,v
+Working file: tryalloca.c
+head: 1.1
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 1;	selected revisions: 1
+description:
+----------------------------
+revision 1.1
+date: 2009-08-17 01:55:38 +0000;  author: leitner;  state: Exp;
+make gatling compile without SUPPORT_PROXY defined
+wrap alloca usage in tryalloca from libowfat
+=============================================================================
+
+RCS file: /cvs/gatling/trycrypt.c,v
+Working file: trycrypt.c
+head: 1.1
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 1;	selected revisions: 1
+description:
+----------------------------
+revision 1.1
+date: 2005-07-25 19:15:44 +0000;  author: leitner;  state: Exp;
+try to detect if we need -lcrypt
+=============================================================================
+
+RCS file: /cvs/gatling/tryiconv.c,v
+Working file: tryiconv.c
+head: 1.1
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 1;	selected revisions: 1
+description:
+----------------------------
+revision 1.1
+date: 2004-01-08 15:21:57 +0000;  author: leitner;  state: Exp;
+iconv workaround
+=============================================================================
+
+RCS file: /cvs/gatling/trymd5.c,v
+Working file: trymd5.c
+head: 1.1
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 1;	selected revisions: 1
+description:
+----------------------------
+revision 1.1
+date: 2008-02-20 00:38:55 +0000;  author: leitner;  state: Exp;
+add trymd5.c (oops)
+=============================================================================
+
+RCS file: /cvs/gatling/trysetresuid.c,v
+Working file: trysetresuid.c
+head: 1.1
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 1;	selected revisions: 1
+description:
+----------------------------
+revision 1.1
+date: 2006-07-29 15:06:01 +0000;  author: leitner;  state: Exp;
+add trysetresuid.c
+=============================================================================
+
+RCS file: /cvs/gatling/trysocket.c,v
+Working file: trysocket.c
+head: 1.2
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 2;	selected revisions: 2
+description:
+----------------------------
+revision 1.2
+date: 2006-07-27 05:24:39 +0000;  author: leitner;  state: Exp;  lines: +4 -0
+some half-assed Windows port (broken)
+use setresuid/setresgid if available
+don't flood console with error messages but count them instead in bench
+----------------------------
+revision 1.1
+date: 2004-01-08 15:29:50 +0000;  author: leitner;  state: Exp;
+oops, forgot to add trysocket.c
+=============================================================================

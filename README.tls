@@ -1,0 +1,33 @@
+gatling now has primitive SSL/TLS support using OpenSSL.
+I took the code from the excellent qmail STARTTLS patch.
+No support for much of anything yet, you just get an HTTPS server
+using the certificate in "server.pem" in the gatling root directory.
+
+If you want OpenSSL to verify client certs, put the CA cert in
+"clientca.pem".  If you need a revocation list, use OpenSSL 0.9.7 or
+later, and put it in "clientcrl.pem".
+
+No way to communicate anything about the client cert to CGIs yet.
+
+
+As of Sep 23 2008 gatling has support for ssh passthrough.  The idea is
+the following.  Let's assume you run a server somewhere, and you want to
+SSH to it, but you only get internet access through some restrictive
+proxy firewall that lets you connect to port 443 because that's what
+HTTPS uses.  So you bind a ssh to port 443 on your server.  Now you
+want to run an SSL webserver, too.  It turns out, you can do both!
+For TLS, the client connects and writes something.  For SSH, the client
+connects and expects the server to write something.  So, gatling can
+accept the connection, attempt an SSL handshake, but if the client does
+not write anything for a few seconds, you pass the descriptor on to sshd
+running in inetd mode.  That way, you can transparently use both SSL and
+SSH on the same port.  You still risk losing SSL connections that come
+from very slow connections, so this is not enabled by default.  To
+enable it, run tlsgatling with
+
+  -X "2,/opt/diet/sbin/sshd -u0"
+
+where -X is the option to enable this, 2 is the timeout in seconds, and
+the rest after the comma is the sshd command line you want gatling to
+run.  Note that gatling auto-appends the -i option to this command line,
+so you do not need to specify it here.
