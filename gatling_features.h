@@ -5,20 +5,20 @@
 
 // #define SUPPORT_BITTORRENT
 
-#define SUPPORT_SERVERSTATUS
-#define SUPPORT_SMB
+// #define SUPPORT_SERVERSTATUS
+// #define SUPPORT_SMB
 #define SUPPORT_FTP
-#define SUPPORT_PROXY
+// #define SUPPORT_PROXY
 /* #define DEBUG to enable more verbose debug messages for tracking fd
  * leaks */
 /* #define DEBUG */
-#define SUPPORT_CGI
-#define SUPPORT_HTACCESS
+// #define SUPPORT_CGI
+// #define SUPPORT_HTACCESS
 
 /* if a user asks for /foo but foo is a directory, then the default
  * behavior of gatling is 404.  Apache generates a redirect to /foo/.
  * #define this if you want gatling to generate a redirect, too */
-#define SUPPORT_DIR_REDIRECT
+// #define SUPPORT_DIR_REDIRECT
 
 /* SUPPORT_BZIP2 means gatling will also look for foo.html.bz2 and not
  * just foo.html.gz; however, almost no browsers support this, and if
@@ -27,13 +27,13 @@
 /* #define SUPPORT_BZIP2 */
 
 /* if you want a redirect instead of a 404, #define this */
-#define SUPPORT_FALLBACK_REDIR
+// #define SUPPORT_FALLBACK_REDIR
 
 /* open files in threads to open kernel I/O scheduling opportunities */
 #undef SUPPORT_THREADED_OPEN
 
 /* try to divine MIME type by looking at content */
-#define SUPPORT_MIMEMAGIC
+// #define SUPPORT_MIMEMAGIC
 
 /* http header size limit: */
 #define MAX_HEADER_SIZE 8192
