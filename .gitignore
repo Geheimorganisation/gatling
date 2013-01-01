@@ -34,3 +34,5 @@ md5lib
 havealloca.h
 tlsgatling
 ptlsgatling
+.*.sw?
+.sw?
