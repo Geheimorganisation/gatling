@@ -28,20 +28,22 @@ havege_state hs;
 
 int my_ciphersuites[] =
 {
-    SSL_EDH_RSA_AES_256_SHA,
-    SSL_EDH_RSA_CAMELLIA_256_SHA,
-    SSL_EDH_RSA_AES_128_SHA,
-    SSL_EDH_RSA_CAMELLIA_128_SHA,
-    SSL_EDH_RSA_DES_168_SHA,
-    SSL_RSA_AES_256_SHA,
-    SSL_RSA_CAMELLIA_256_SHA,
-    SSL_RSA_AES_128_SHA,
-    SSL_RSA_CAMELLIA_128_SHA,
-    SSL_RSA_DES_168_SHA,
-    SSL_RSA_RC4_128_SHA,
-    SSL_RSA_RC4_128_MD5,
+    TLS_DHE_RSA_WITH_AES_256_CBC_SHA,
+    TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA,
+    TLS_DHE_RSA_WITH_AES_128_CBC_SHA,
+    TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA,
+    TLS_DHE_RSA_WITH_DES_CBC_SHA,
+    TLS_RSA_WITH_AES_256_CBC_SHA,
+    TLS_RSA_WITH_CAMELLIA_256_CBC_SHA,
+    TLS_RSA_WITH_AES_128_CBC_SHA,
+    TLS_RSA_WITH_CAMELLIA_128_CBC_SHA,
+    TLS_RSA_WITH_DES_CBC_SHA,
+    TLS_RSA_WITH_RC4_128_SHA,
+    TLS_RSA_WITH_RC4_128_MD5,
     0
 };
+
+#if 0
 
 /*
  * These session callbacks use a simple chained list
@@ -50,11 +52,11 @@ int my_ciphersuites[] =
 ssl_session *s_list_1st = NULL;
 ssl_session *cur, *prv;
 
-static int my_get_session( ssl_context *ssl )
+static int my_get_session( void *arg, ssl_session *ssl )
 {
     time_t t = time( NULL );
 
-    if( ssl->resume == 0 )
+    if( ssl->handshake->resume == 0 )
         return( 1 );
 
     cur = s_list_1st;
@@ -82,7 +84,7 @@ static int my_get_session( ssl_context *ssl )
     return( 1 );
 }
 
-static int my_set_session( ssl_context *ssl )
+static int my_set_session( void *arg, ssl_session *ssl )
 {
     time_t t = time( NULL );
 
@@ -116,6 +118,8 @@ static int my_set_session( ssl_context *ssl )
 
     return( 0 );
 }
+
+#endif
 
 static int my_net_recv( void *ctx, unsigned char *buf, size_t len ) {
   int sock=(int)(uintptr_t)ctx;
@@ -178,9 +182,10 @@ fail:
   ssl_set_authmode( ssl, SSL_VERIFY_NONE );
   ssl_set_rng( ssl, havege_random, &hs );
   ssl_set_bio( ssl, my_net_recv, (void*)(uintptr_t)sock, my_net_send, (void*)(uintptr_t)sock );
-  ssl_set_scb( ssl, my_get_session, my_set_session );
+  //ssl_set_session_cache(ssl, my_get_session, NULL, my_set_session, NULL);
+  //ssl_set_scb( ssl, my_get_session, my_set_session );
   ssl_set_ciphersuites( ssl, my_ciphersuites );
-  ssl_set_session( ssl, 1, 0, ssn );
+  ssl_set_session( ssl, ssn );
 
   ssl_set_ca_chain( ssl, srvcert.next, NULL, NULL );
   ssl_set_own_cert( ssl, &srvcert, &rsa );

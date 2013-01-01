@@ -2103,7 +2103,7 @@ usage:
 	++tick.sec.x;
 	while ((i=io_timeouted())!=-1) {
 	  struct http_data* x;
-#if defined(SUPPORT_HTTPS) && !defined(SUPPORT_MULTIPROC)
+#if defined(SUPPORT_HTTPS) && defined(SUPPORT_CGI)
 	  if (ssh_timeout && (x=io_getcookie(i)) && x->t == HTTPSACCEPT_CHECK) {
 	    if (logging) {
 	      char numbuf[FMT_ULONG];
