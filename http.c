@@ -2,6 +2,11 @@
 #define _XOPEN_SOURCE 500
 #endif
 
+#ifdef __OpenBSD__
+/* My OpenBSD box fails with #define __BSD_VISIBLE */
+#define S_ISLNK(m)      ((m & 0170000) == 0120000)
+#endif
+
 #include "gatling.h"
 
 #include "buffer.h"
