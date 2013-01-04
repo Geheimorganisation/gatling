@@ -57,6 +57,11 @@
 #include <sys/prctl.h>
 #endif
 
+#if defined(__OpenBSD__)
+#warning "OpenBSE is not POSIX-compilant, therefore you cannot expect correct error handling"
+#define EPROTO errno
+#endif
+
 char serverroot[1024];
 
 #ifdef SUPPORT_MULTIPROC
@@ -818,9 +823,7 @@ int handle_ssl_error_code(int sock,int code,int reading) {
       buffer_putulong(buffer_1,sock);
       buffer_putnlflush(buffer_1);
     }
-#ifndef __OpenBSD__
     errno=EPROTO;
-#endif
     return -1;
   }
 }
