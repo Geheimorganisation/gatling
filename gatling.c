@@ -102,10 +102,6 @@ const char months[] = "JanFebMarAprMayJunJulAugSepOctNovDec";
 int forksock[2];
 #endif
 
-#if defined(__OpenBSD__) || defined(__NetBSD__)
-#define __broken_itojun_v6__
-#endif
-
 int virtual_hosts;
 int transproxy;
 int directory_index;
